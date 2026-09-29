@@ -33,6 +33,12 @@ import {
   shapePyramidWhite,
   shapeTorusBlue,
   shapeSpring1Blue,
+  learningPathDesign,
+  learningPathDevelopment,
+  learningPathItSoftware,
+  learningPathBusiness,
+  learningPathMarketing,
+  learningPathPhotography,
 } from '../assets/images';
 
 export default function Home() {
@@ -179,62 +185,37 @@ export default function Home() {
     '+ More',
   ];
 
-  // Category paths with lime circle icons
+  // Category paths with lime circle icons (Exact Figma Prototype Assets)
   const learningPaths = [
     {
       name: 'Design',
       slug: 'design',
-      icon: (
-        <svg className="w-8 h-8 stroke-[#242528]" fill="none" viewBox="0 0 24 24" strokeWidth="1.8">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-        </svg>
-      ),
+      icon: learningPathDesign,
     },
     {
       name: 'Development',
       slug: 'development',
-      icon: (
-        <svg className="w-8 h-8 stroke-[#242528]" fill="none" viewBox="0 0 24 24" strokeWidth="1.8">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-        </svg>
-      ),
+      icon: learningPathDevelopment,
     },
     {
       name: 'IT & Software',
       slug: 'it',
-      icon: (
-        <svg className="w-8 h-8 stroke-[#242528]" fill="none" viewBox="0 0 24 24" strokeWidth="1.8">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
+      icon: learningPathItSoftware,
     },
     {
       name: 'Business',
       slug: 'business',
-      icon: (
-        <svg className="w-8 h-8 stroke-[#242528]" fill="none" viewBox="0 0 24 24" strokeWidth="1.8">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
+      icon: learningPathBusiness,
     },
     {
       name: 'Marketing',
       slug: 'marketing',
-      icon: (
-        <svg className="w-8 h-8 stroke-[#242528]" fill="none" viewBox="0 0 24 24" strokeWidth="1.8">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-        </svg>
-      ),
+      icon: learningPathMarketing,
     },
     {
       name: 'Photography',
       slug: 'photography',
-      icon: (
-        <svg className="w-8 h-8 stroke-[#242528]" fill="none" viewBox="0 0 24 24" strokeWidth="1.8">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
+      icon: learningPathPhotography,
     },
   ];
 
@@ -626,41 +607,42 @@ export default function Home() {
 
       {/* 
         ========================================================================
-        4. CATEGORIES SECTION ("Explore Diverse Learning Paths at ByteSpace")
-           Clean unboxed layout: Only lime circle icon + category name below
+        4. CATEGORIES SECTION ("Explore Diverse Learning Paths at Bytespace")
+           Exact Figma 1:1 Boxed Cards Layout (169x169px, rounded-[25px], #CED0D3 border)
         ========================================================================
       */}
-      <section className="w-full py-20 bg-[#FAFAFA] border-y border-[#E5E6E8]">
-        <Container className="space-y-12">
+      <section className="w-full py-20 lg:py-24 bg-white">
+        <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-5 space-y-12 sm:space-y-14">
           {/* Header */}
           <div className="text-center max-w-[854px] mx-auto space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[#242528] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
               Explore Diverse Learning Paths at Bytespace
             </h2>
-            <p className="text-[#4B4C53] text-base sm:text-lg leading-relaxed max-w-[760px] mx-auto font-normal">
-              At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.
+            <p className="text-[#4B4C53] text-base sm:text-lg leading-[1.6] max-w-[760px] mx-auto font-normal">
+              At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there&apos;s something for everyone. Unleash your potential and explore our carefully curated categories.
             </p>
           </div>
 
-          {/* 6 Category Items: Clean Lime Circle (#CBFC01) + Title Below (Unboxed) */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 pt-6 max-w-[1132px] mx-auto">
+          {/* 6 Category Boxed Cards (Exact 169x169px cards matching Figma prototype) */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 lg:gap-[38px] max-w-[1204px] mx-auto justify-items-center">
             {learningPaths.map((item) => (
               <Link
                 key={item.name}
                 to={`/search?category=${item.slug}`}
-                className="flex flex-col items-center text-center group cursor-pointer"
+                className="w-full max-w-[169px] h-[169px] bg-white rounded-[25px] border-[1.5px] border-[#CED0D3] hover:border-[#003BE2] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center p-3.5 group cursor-pointer"
               >
-                {/* Clean Lime circle container */}
-                <div className="w-20 h-20 sm:w-[88px] sm:h-[88px] rounded-full bg-[#CBFC01] flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300 shadow-sm">
-                  {item.icon}
-                </div>
-                <h3 className="text-[20px] font-semibold text-[#242528] group-hover:text-[#003BE2] transition-colors">
+                <img
+                  src={item.icon}
+                  alt={item.name}
+                  className="w-[60px] h-[60px] object-contain mb-3.5 group-hover:scale-110 transition-transform duration-300"
+                />
+                <h3 className="text-[17px] font-semibold text-[#242528] group-hover:text-[#003BE2] transition-colors text-center leading-tight">
                   {item.name}
                 </h3>
               </Link>
             ))}
           </div>
-        </Container>
+        </div>
       </section>
 
       {/* 

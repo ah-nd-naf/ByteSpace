@@ -59,8 +59,24 @@ import shapeSpring2 from './shape-spring-2.png';
 import logoBytespace from './logo-bytespace.svg';
 import logoPartners from './logo-partners.svg';
 
+// Learning Path Icons (Exact Figma Prototype Assets)
+import learningPathDesign from './learning-path-design.png';
+import learningPathDevelopment from './learning-path-development.png';
+import learningPathItSoftware from './learning-path-it-software.png';
+import learningPathBusiness from './learning-path-business.png';
+import learningPathMarketing from './learning-path-marketing.png';
+import learningPathPhotography from './learning-path-photography.png';
+
 // Export named assets
 export {
+  // Learning Path Icons
+  learningPathDesign,
+  learningPathDevelopment,
+  learningPathItSoftware,
+  learningPathBusiness,
+  learningPathMarketing,
+  learningPathPhotography,
+
   // Course thumbnails
   course1,
   course2,
