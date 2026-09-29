@@ -51,6 +51,10 @@ import shapeSpring1 from './shape-spring-1.png';
 import shapePyramid from './shape-pyramid.png';
 import shapeSpring2 from './shape-spring-2.png';
 
+// Vector Logos (Figma SVGs)
+import logoBytespace from './logo-bytespace.svg';
+import logoPartners from './logo-partners.svg';
+
 // Export named assets
 export {
   // Course thumbnails
@@ -105,6 +109,10 @@ export {
   shapeSpring1,
   shapePyramid,
   shapeSpring2,
+
+  // Logos
+  logoBytespace,
+  logoPartners,
 };
 
 // Grouped default export
@@ -156,6 +164,10 @@ const images = {
     spring1: shapeSpring1,
     pyramid: shapePyramid,
     spring2: shapeSpring2,
+  },
+  logos: {
+    bytespace: logoBytespace,
+    partners: logoPartners,
   },
 };
 
