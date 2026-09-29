@@ -38,7 +38,7 @@ import {
 export default function Home() {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState('Drawing & Painting');
+  const [activeCategory, setActiveCategory] = useState('Featured');
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -64,7 +64,8 @@ export default function Home() {
       rating: '4.5',
       level: 'Beginner',
       age: '26+',
-      price: '$25/lifetime',
+      price: '$25',
+      pricePeriod: '/lifetime',
       category: 'Design',
       highlightEnroll: false,
     },
@@ -80,7 +81,8 @@ export default function Home() {
       rating: '4.5',
       level: 'Beginner',
       age: '26+',
-      price: '$25/lifetime',
+      price: '$25',
+      pricePeriod: '/lifetime',
       category: 'Development',
       highlightEnroll: false,
     },
@@ -96,9 +98,10 @@ export default function Home() {
       rating: '4.5',
       level: 'Beginner',
       age: '26+',
-      price: '$25/lifetime',
+      price: '$25',
+      pricePeriod: '/lifetime',
       category: 'Data Science',
-      highlightEnroll: true, // Lime button
+      highlightEnroll: true,
     },
     {
       id: 4,
@@ -112,7 +115,8 @@ export default function Home() {
       rating: '4.5',
       level: 'Beginner',
       age: '26+',
-      price: '$25/lifetime',
+      price: '$25',
+      pricePeriod: '/lifetime',
       category: 'Productivity',
       highlightEnroll: false,
     },
@@ -128,9 +132,10 @@ export default function Home() {
       rating: '4.5',
       level: 'Beginner',
       age: '26+',
-      price: '$25/lifetime',
+      price: '$25',
+      pricePeriod: '/lifetime',
       category: 'Finance',
-      highlightEnroll: true, // Lime button
+      highlightEnroll: true,
     },
     {
       id: 6,
@@ -144,7 +149,8 @@ export default function Home() {
       rating: '4.5',
       level: 'Beginner',
       age: '26+',
-      price: '$25/lifetime',
+      price: '$25',
+      pricePeriod: '/lifetime',
       category: 'Business',
       highlightEnroll: false,
     },
@@ -535,55 +541,87 @@ export default function Home() {
         ========================================================================
       */}
       <section className="w-full py-20 lg:py-24 bg-white">
-        <Container className="space-y-10">
+        <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-5 space-y-10">
           {/* Section Header */}
           <div className="text-center max-w-[854px] mx-auto space-y-4">
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
-              Discover Your Passion, Build Your Skills
+              Discover Your Passion, <br className="hidden sm:inline" />Build Your Skills
             </h2>
             <p className="text-[#4B4C53] text-base sm:text-lg leading-[1.5] max-w-[750px] mx-auto font-normal">
               At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.
             </p>
           </div>
 
-          {/* Category Filter Pills (3 Rows with active state) */}
-          <div className="flex flex-wrap items-center justify-center gap-2.5 max-w-[1020px] mx-auto pt-2">
-            {categoryPills.map((pill) => {
-              const isSelected = activeCategory === pill;
-              return (
+          {/* Category Filter Pills (3 Centered Rows matching exact Figma screenshot layout) */}
+          <div className="flex flex-col items-center gap-2.5 sm:gap-3 max-w-[1200px] mx-auto pt-2 w-full overflow-x-auto no-scrollbar">
+            {/* Row 1 - 8 Pills */}
+            <div className="flex items-center justify-center gap-2 sm:gap-2.5 whitespace-nowrap">
+              {['Featured', 'Music', 'Drawing & Painting', 'Marketing', 'Animation', 'Social Media', 'UI/UX Design', 'Creative Marketing'].map((pill) => (
                 <button
                   key={pill}
                   type="button"
                   onClick={() => setActiveCategory(pill)}
-                  className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer ${
-                    isSelected
-                      ? 'bg-[#CBFC01] text-[#242528] font-semibold shadow-sm'
-                      : 'bg-[#F5F5F6] text-[#4B4C53] hover:bg-[#E5E6E8]'
+                  className={`px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-[13px] sm:text-[14px] md:text-[15px] transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0 ${
+                    activeCategory === pill
+                      ? 'bg-[#CBFC01] text-[#242528] font-semibold shadow-xs'
+                      : 'bg-[#F5F5F6] text-[#242528] font-normal hover:bg-[#E5E6E8]'
                   }`}
                 >
                   {pill}
                 </button>
-              );
-            })}
+              ))}
+            </div>
+
+            {/* Row 2 - 6 Pills */}
+            <div className="flex items-center justify-center gap-2 sm:gap-2.5 whitespace-nowrap">
+              {['Digital Illustration', 'Film & Video', 'Crafts', 'Freelance & Entrepreneurship', 'Graphic Design', 'Photography'].map((pill) => (
+                <button
+                  key={pill}
+                  type="button"
+                  onClick={() => setActiveCategory(pill)}
+                  className={`px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-[13px] sm:text-[14px] md:text-[15px] transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0 ${
+                    activeCategory === pill
+                      ? 'bg-[#CBFC01] text-[#242528] font-semibold shadow-xs'
+                      : 'bg-[#F5F5F6] text-[#242528] font-normal hover:bg-[#E5E6E8]'
+                  }`}
+                >
+                  {pill}
+                </button>
+              ))}
+            </div>
+
+            {/* Row 3 - 4 Pills + "+ More" */}
+            <div className="flex items-center justify-center gap-2 sm:gap-2.5 whitespace-nowrap">
+              {['Productivity', 'Web Development', 'Data Science', 'Cooking'].map((pill) => (
+                <button
+                  key={pill}
+                  type="button"
+                  onClick={() => setActiveCategory(pill)}
+                  className={`px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-[13px] sm:text-[14px] md:text-[15px] transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0 ${
+                    activeCategory === pill
+                      ? 'bg-[#CBFC01] text-[#242528] font-semibold shadow-xs'
+                      : 'bg-[#F5F5F6] text-[#242528] font-normal hover:bg-[#E5E6E8]'
+                  }`}
+                >
+                  {pill}
+                </button>
+              ))}
+              <Link
+                to="/search"
+                className="text-[#003BE2] hover:text-[#0030B8] text-[13px] sm:text-[14px] md:text-[15px] font-medium ml-2 transition-colors cursor-pointer whitespace-nowrap"
+              >
+                + More
+              </Link>
+            </div>
           </div>
 
-          {/* 3x2 Course Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+          {/* 3x2 Course Cards Grid (Max-width 1200px, 40px gap matching exact Figma coordinates) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[1200px] mx-auto pt-6">
             {courses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
           </div>
-
-          {/* Bottom Button */}
-          <div className="text-center pt-6">
-            <Link
-              to="/search"
-              className="inline-block bg-[#003BE2] hover:bg-[#0030B8] text-white font-semibold text-base px-8 py-3.5 rounded-[12px] transition-all active:scale-95 shadow-md"
-            >
-              Explore More Courses
-            </Link>
-          </div>
-        </Container>
+        </div>
       </section>
 
       {/* 
