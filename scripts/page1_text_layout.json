@@ -1,0 +1,2182 @@
+[
+  {
+    "y0": 41.0,
+    "y1": 71.5,
+    "x0": 159.0,
+    "x1": 292.7,
+    "text": "ByteSpace",
+    "size": 24.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 47.0,
+    "y1": 67.3,
+    "x0": 614.5,
+    "x1": 657.8,
+    "text": "Home",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 50.0,
+    "y1": 70.3,
+    "x0": 682.5,
+    "x1": 739.8,
+    "text": "Courses",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 50.0,
+    "y1": 70.3,
+    "x0": 764.5,
+    "x1": 824.2,
+    "text": "Creators",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 50.0,
+    "y1": 70.3,
+    "x0": 1146.0,
+    "x1": 1194.1,
+    "text": "Sign In",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 50.0,
+    "y1": 70.3,
+    "x0": 1219.0,
+    "x1": 1271.1,
+    "text": "Join Us",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 165.0,
+    "y1": 256.4,
+    "x0": 293.0,
+    "x1": 1162.7,
+    "text": "Get Access to Hundreds",
+    "size": 72.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 251.0,
+    "y1": 342.4,
+    "x0": 396.0,
+    "x1": 1044.0,
+    "text": "Courses Available",
+    "size": 72.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 376.0,
+    "y1": 398.9,
+    "x0": 310.5,
+    "x1": 1129.5,
+    "text": "Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 474.0,
+    "y1": 496.9,
+    "x0": 930.5,
+    "x1": 991.4,
+    "text": "Search",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 476.5,
+    "y1": 499.4,
+    "x0": 485.5,
+    "x1": 655.4,
+    "text": "Course, topic, creator",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 655.0,
+    "y1": 675.3,
+    "x0": 420.0,
+    "x1": 517.6,
+    "text": "UI/UX Design",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 667.0,
+    "y1": 684.8,
+    "x0": 858.0,
+    "x1": 972.0,
+    "text": "Learning Progress",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 673.0,
+    "y1": 691.2,
+    "x0": 498.0,
+    "x1": 595.6,
+    "text": "\" 1000+ Students",
+    "size": 10.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 676.0,
+    "y1": 691.2,
+    "x0": 420.0,
+    "x1": 489.4,
+    "text": "200 Courses",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 690.0,
+    "y1": 751.0,
+    "x0": 858.0,
+    "x1": 953.7,
+    "text": "55%",
+    "size": 48.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 853.0,
+    "y1": 873.3,
+    "x0": 344.0,
+    "x1": 458.3,
+    "text": "Happy Students",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 874.0,
+    "y1": 889.2,
+    "x0": 344.0,
+    "x1": 392.6,
+    "text": "4.5 (240)",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 914.0,
+    "y1": 929.2,
+    "x0": 545.0,
+    "x1": 568.1,
+    "text": "2K+",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1296.0,
+    "y1": 1351.9,
+    "x0": 474.1,
+    "x1": 974.5,
+    "text": "Discover Your Passion,",
+    "size": 44.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1349.0,
+    "y1": 1404.9,
+    "x0": 551.5,
+    "x1": 887.5,
+    "text": "Build Your Skills",
+    "size": 44.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1423.0,
+    "y1": 1445.9,
+    "x0": 266.6,
+    "x1": 1177.4,
+    "text": "At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1452.0,
+    "y1": 1474.9,
+    "x0": 404.8,
+    "x1": 1034.2,
+    "text": "fields, from technology to the arts, and make a difference in your career and life.",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1532.0,
+    "y1": 1552.3,
+    "x0": 191.3,
+    "x1": 254.7,
+    "text": "Featured",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1532.0,
+    "y1": 1552.3,
+    "x0": 303.5,
+    "x1": 345.5,
+    "text": "Music",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1532.0,
+    "y1": 1552.3,
+    "x0": 394.1,
+    "x1": 531.9,
+    "text": "Drawing & Painting",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1532.0,
+    "y1": 1552.3,
+    "x0": 580.4,
+    "x1": 652.6,
+    "text": "Marketing",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1532.0,
+    "y1": 1552.3,
+    "x0": 701.0,
+    "x1": 774.0,
+    "text": "Animation",
+    "size": 16.0,
+    "font": "Type3 (2531 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1532.0,
+    "y1": 1552.3,
+    "x0": 822.1,
+    "x1": 913.8,
+    "text": "Social Media",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1532.0,
+    "y1": 1552.3,
+    "x0": 962.2,
+    "x1": 1059.8,
+    "text": "UI/UX Design",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1532.0,
+    "y1": 1552.3,
+    "x0": 1108.4,
+    "x1": 1244.6,
+    "text": "Creative Marketing",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1596.0,
+    "y1": 1616.3,
+    "x0": 259.3,
+    "x1": 383.7,
+    "text": "Digital Illustration",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1596.0,
+    "y1": 1616.3,
+    "x0": 432.0,
+    "x1": 523.0,
+    "text": "Film & Video",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1596.0,
+    "y1": 1616.3,
+    "x0": 571.5,
+    "x1": 614.5,
+    "text": "Crafts",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1596.0,
+    "y1": 1616.3,
+    "x0": 663.4,
+    "x1": 876.6,
+    "text": "Freelance & Entrepreneurship",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1596.0,
+    "y1": 1616.3,
+    "x0": 925.2,
+    "x1": 1036.8,
+    "text": "Graphic Design",
+    "size": 16.0,
+    "font": "Type3 (2531 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1596.0,
+    "y1": 1616.3,
+    "x0": 1085.5,
+    "x1": 1178.5,
+    "text": "Photography",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1660.0,
+    "y1": 1680.3,
+    "x0": 423.7,
+    "x1": 509.3,
+    "text": "Productivity",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1660.0,
+    "y1": 1680.3,
+    "x0": 557.7,
+    "x1": 691.2,
+    "text": "Web Development",
+    "size": 16.0,
+    "font": "Type3 (2531 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1660.0,
+    "y1": 1680.3,
+    "x0": 739.8,
+    "x1": 834.2,
+    "text": "Data Science",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1660.0,
+    "y1": 1680.3,
+    "x0": 883.0,
+    "x1": 944.0,
+    "text": "Cooking",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1660.0,
+    "y1": 1680.4,
+    "x0": 976.9,
+    "x1": 1029.1,
+    "text": "+ More",
+    "size": 16.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 161.2,
+    "x1": 217.8,
+    "text": "17 Lessons",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 254.4,
+    "x1": 338.5,
+    "text": "2 hours 16 mins",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 375.1,
+    "x1": 451.9,
+    "text": "59 Comments",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 573.2,
+    "x1": 629.8,
+    "text": "17 Lessons",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 666.4,
+    "x1": 750.5,
+    "text": "2 hours 16 mins",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 787.1,
+    "x1": 863.9,
+    "text": "59 Comments",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 987.2,
+    "x1": 1043.8,
+    "text": "17 Lessons",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 1080.4,
+    "x1": 1164.5,
+    "text": "2 hours 16 mins",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1940.0,
+    "y1": 1955.3,
+    "x0": 1201.1,
+    "x1": 1277.9,
+    "text": "59 Comments",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1999.0,
+    "y1": 2024.4,
+    "x0": 136.0,
+    "x1": 369.6,
+    "text": "Learn Figma from Basic",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1999.0,
+    "y1": 2024.4,
+    "x0": 549.0,
+    "x1": 725.9,
+    "text": "Build Digital Asset",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 1999.0,
+    "y1": 2024.4,
+    "x0": 962.0,
+    "x1": 1172.9,
+    "text": "the Power of Big Data",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2003.0,
+    "y1": 2025.9,
+    "x0": 426.0,
+    "x1": 456.5,
+    "text": "4.5",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2003.0,
+    "y1": 2025.9,
+    "x0": 839.0,
+    "x1": 869.5,
+    "text": "4.5",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2003.0,
+    "y1": 2025.9,
+    "x0": 1252.0,
+    "x1": 1283.2,
+    "text": "4.5",
+    "size": 18.0,
+    "font": "Type3 (3045 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2026.0,
+    "y1": 2041.3,
+    "x0": 136.0,
+    "x1": 236.9,
+    "text": "by purepearl studio",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2026.0,
+    "y1": 2041.3,
+    "x0": 549.0,
+    "x1": 649.9,
+    "text": "by purepearl studio",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2026.0,
+    "y1": 2041.3,
+    "x0": 962.0,
+    "x1": 1062.9,
+    "text": "by purepearl studio",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2068.0,
+    "y1": 2083.3,
+    "x0": 172.1,
+    "x1": 220.9,
+    "text": "Beginner",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2068.0,
+    "y1": 2083.3,
+    "x0": 346.4,
+    "x1": 368.6,
+    "text": "26+",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2068.0,
+    "y1": 2083.3,
+    "x0": 585.1,
+    "x1": 633.9,
+    "text": "Beginner",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2068.0,
+    "y1": 2083.3,
+    "x0": 759.4,
+    "x1": 781.6,
+    "text": "26+",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2068.0,
+    "y1": 2083.3,
+    "x0": 998.1,
+    "x1": 1046.9,
+    "text": "Beginner",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2068.0,
+    "y1": 2083.3,
+    "x0": 1172.4,
+    "x1": 1194.6,
+    "text": "26+",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2106.0,
+    "y1": 2131.4,
+    "x0": 136.0,
+    "x1": 213.6,
+    "text": "$25/lifetime",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2106.0,
+    "y1": 2131.4,
+    "x0": 549.0,
+    "x1": 626.6,
+    "text": "$25/lifetime",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2106.0,
+    "y1": 2131.4,
+    "x0": 962.0,
+    "x1": 1039.6,
+    "text": "$25/lifetime",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 160.2,
+    "x1": 216.8,
+    "text": "17 Lessons",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 253.4,
+    "x1": 337.5,
+    "text": "2 hours 16 mins",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 374.1,
+    "x1": 450.9,
+    "text": "59 Comments",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 573.2,
+    "x1": 629.8,
+    "text": "17 Lessons",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 666.4,
+    "x1": 750.5,
+    "text": "2 hours 16 mins",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 787.1,
+    "x1": 863.9,
+    "text": "59 Comments",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 986.2,
+    "x1": 1042.8,
+    "text": "17 Lessons",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 1079.4,
+    "x1": 1163.5,
+    "text": "2 hours 16 mins",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2364.0,
+    "y1": 2379.3,
+    "x0": 1200.1,
+    "x1": 1276.9,
+    "text": "59 Comments",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2423.0,
+    "y1": 2448.4,
+    "x0": 136.0,
+    "x1": 397.2,
+    "text": "Balancing Productivity and",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2423.0,
+    "y1": 2448.4,
+    "x0": 549.0,
+    "x1": 808.9,
+    "text": "Mastering Money Manage",
+    "size": 20.0,
+    "font": "Type3 (3045 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2423.0,
+    "y1": 2448.4,
+    "x0": 962.0,
+    "x1": 1228.6,
+    "text": "From Idea to Startup Succes",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2426.0,
+    "y1": 2448.9,
+    "x0": 839.0,
+    "x1": 869.5,
+    "text": "4.5",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2426.0,
+    "y1": 2448.9,
+    "x0": 1252.0,
+    "x1": 1282.5,
+    "text": "4.5",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2427.0,
+    "y1": 2449.9,
+    "x0": 426.0,
+    "x1": 456.5,
+    "text": "4.5",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2447.0,
+    "y1": 2472.4,
+    "x0": 136.0,
+    "x1": 172.1,
+    "text": "Self-",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2447.0,
+    "y1": 2472.4,
+    "x0": 182.2,
+    "x1": 231.0,
+    "text": "Care",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2447.0,
+    "y1": 2472.4,
+    "x0": 549.0,
+    "x1": 603.0,
+    "text": "ment",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2447.0,
+    "y1": 2472.4,
+    "x0": 962.0,
+    "x1": 972.8,
+    "text": "s",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2450.0,
+    "y1": 2465.3,
+    "x0": 136.0,
+    "x1": 236.9,
+    "text": "by purepearl studio",
+    "size": 12.0,
+    "font": "Type3 (3045 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2450.0,
+    "y1": 2465.3,
+    "x0": 549.0,
+    "x1": 649.9,
+    "text": "by purepearl studio",
+    "size": 12.0,
+    "font": "Type3 (3045 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2450.0,
+    "y1": 2465.3,
+    "x0": 962.0,
+    "x1": 1062.9,
+    "text": "by purepearl studio",
+    "size": 12.0,
+    "font": "Type3 (3045 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2492.0,
+    "y1": 2507.3,
+    "x0": 172.1,
+    "x1": 220.9,
+    "text": "Beginner",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2492.0,
+    "y1": 2507.3,
+    "x0": 346.4,
+    "x1": 368.6,
+    "text": "26+",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2492.0,
+    "y1": 2507.3,
+    "x0": 585.1,
+    "x1": 633.9,
+    "text": "Beginner",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2492.0,
+    "y1": 2507.3,
+    "x0": 759.4,
+    "x1": 781.6,
+    "text": "26+",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2492.0,
+    "y1": 2507.3,
+    "x0": 998.1,
+    "x1": 1046.9,
+    "text": "Beginner",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2492.0,
+    "y1": 2507.3,
+    "x0": 1172.4,
+    "x1": 1194.6,
+    "text": "26+",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2530.0,
+    "y1": 2555.4,
+    "x0": 136.0,
+    "x1": 213.6,
+    "text": "$25/lifetime",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2530.0,
+    "y1": 2555.4,
+    "x0": 549.0,
+    "x1": 626.6,
+    "text": "$25/lifetime",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2530.0,
+    "y1": 2555.4,
+    "x0": 962.0,
+    "x1": 1039.6,
+    "text": "$25/lifetime",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2646.0,
+    "y1": 2691.8,
+    "x0": 324.0,
+    "x1": 1115.0,
+    "text": "Explore Diverse Learning Paths at Bytespace",
+    "size": 36.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2710.0,
+    "y1": 2732.9,
+    "x0": 264.9,
+    "x1": 1179.1,
+    "text": "At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2739.0,
+    "y1": 2761.9,
+    "x0": 266.9,
+    "x1": 1172.1,
+    "text": "fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2940.0,
+    "y1": 2965.4,
+    "x0": 557.0,
+    "x1": 676.1,
+    "text": "IT & Software",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2940.0,
+    "y1": 2965.4,
+    "x0": 785.0,
+    "x1": 862.7,
+    "text": "Business",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2940.0,
+    "y1": 2965.4,
+    "x0": 985.5,
+    "x1": 1075.7,
+    "text": "Marketing",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2940.0,
+    "y1": 2965.4,
+    "x0": 1179.5,
+    "x1": 1295.8,
+    "text": "Photography",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2941.0,
+    "y1": 2966.4,
+    "x0": 171.0,
+    "x1": 233.3,
+    "text": "Design",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 2941.0,
+    "y1": 2966.4,
+    "x0": 349.0,
+    "x1": 468.8,
+    "text": "Development",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3312.0,
+    "y1": 3368.0,
+    "x0": 121.0,
+    "x1": 674.8,
+    "text": "Your Path to Professional",
+    "size": 44.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3365.0,
+    "y1": 3421.0,
+    "x0": 121.0,
+    "x1": 549.5,
+    "text": "Growth Starts Here!",
+    "size": 44.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3415.0,
+    "y1": 3430.3,
+    "x0": 798.2,
+    "x1": 854.8,
+    "text": "17 Lessons",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3415.0,
+    "y1": 3430.3,
+    "x0": 891.4,
+    "x1": 975.5,
+    "text": "2 hours 16 mins",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3415.0,
+    "y1": 3430.3,
+    "x0": 1012.1,
+    "x1": 1088.9,
+    "text": "59 Comments",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3463.0,
+    "y1": 3485.9,
+    "x0": 121.0,
+    "x1": 598.3,
+    "text": "Explore our curated selection of courses tailored to enhance",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3472.0,
+    "y1": 3489.8,
+    "x0": 1119.0,
+    "x1": 1233.0,
+    "text": "Learning Progress",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3473.0,
+    "y1": 3498.4,
+    "x0": 774.0,
+    "x1": 1007.6,
+    "text": "Learn Figma from Basic",
+    "size": 20.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3475.0,
+    "y1": 3497.9,
+    "x0": 1064.0,
+    "x1": 1095.2,
+    "text": "4.5",
+    "size": 18.0,
+    "font": "Type3 (3045 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3492.0,
+    "y1": 3514.9,
+    "x0": 121.0,
+    "x1": 534.0,
+    "text": "your capabilities and accelerate your career journey.",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3499.0,
+    "y1": 3560.0,
+    "x0": 1119.0,
+    "x1": 1214.7,
+    "text": "55%",
+    "size": 48.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3503.0,
+    "y1": 3518.3,
+    "x0": 774.0,
+    "x1": 874.9,
+    "text": "by purepearl studio",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3521.0,
+    "y1": 3543.9,
+    "x0": 121.0,
+    "x1": 558.2,
+    "text": "Whether you are looking to sharpen specific skills, gain",
+    "size": 18.0,
+    "font": "Type3 (2531 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3545.0,
+    "y1": 3560.3,
+    "x0": 810.1,
+    "x1": 858.9,
+    "text": "Beginner",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3545.0,
+    "y1": 3560.3,
+    "x0": 984.4,
+    "x1": 1006.6,
+    "text": "26+",
+    "size": 12.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3550.0,
+    "y1": 3572.9,
+    "x0": 121.0,
+    "x1": 591.3,
+    "text": "industry expertise, or embark on a new career path entirely,",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3579.0,
+    "y1": 3601.9,
+    "x0": 121.0,
+    "x1": 378.6,
+    "text": "we have the resources you need.",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3583.0,
+    "y1": 3608.4,
+    "x0": 774.0,
+    "x1": 851.6,
+    "text": "$25/lifetime",
+    "size": 20.0,
+    "font": "Type3 (2037 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3644.0,
+    "y1": 3689.7,
+    "x0": 121.0,
+    "x1": 174.0,
+    "text": "12K",
+    "size": 36.0,
+    "font": "Type3 (2531 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3644.0,
+    "y1": 3688.4,
+    "x0": 246.0,
+    "x1": 306.5,
+    "text": "70+",
+    "size": 36.0,
+    "font": "Type3 (2531 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3644.0,
+    "y1": 3688.4,
+    "x0": 367.0,
+    "x1": 400.1,
+    "text": "16",
+    "size": 36.0,
+    "font": "Type3 (2531 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3692.0,
+    "y1": 3714.9,
+    "x0": 121.0,
+    "x1": 189.6,
+    "text": "Students",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3692.0,
+    "y1": 3714.9,
+    "x0": 246.0,
+    "x1": 310.4,
+    "text": "Courses",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3692.0,
+    "y1": 3714.9,
+    "x0": 367.0,
+    "x1": 434.2,
+    "text": "Creators",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3924.0,
+    "y1": 3944.4,
+    "x0": 137.0,
+    "x1": 237.2,
+    "text": "Total Revenue",
+    "size": 16.0,
+    "font": "Type3 (2531 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3943.0,
+    "y1": 3955.7,
+    "x0": 137.0,
+    "x1": 176.0,
+    "text": "July 1-28",
+    "size": 10.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3963.0,
+    "y1": 3993.5,
+    "x0": 137.0,
+    "x1": 220.1,
+    "text": "$120.29",
+    "size": 24.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3966.0,
+    "y1": 4022.0,
+    "x0": 741.0,
+    "x1": 1131.9,
+    "text": "Create & Manage",
+    "size": 44.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 3973.0,
+    "y1": 3985.7,
+    "x0": 307.1,
+    "x1": 328.9,
+    "text": "+12$",
+    "size": 10.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4019.0,
+    "y1": 4075.0,
+    "x0": 741.0,
+    "x1": 1064.4,
+    "text": "Courses Easily.",
+    "size": 44.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4074.0,
+    "y1": 4094.4,
+    "x0": 137.0,
+    "x1": 224.9,
+    "text": "Year to Date",
+    "size": 16.0,
+    "font": "Type3 (2037 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4093.0,
+    "y1": 4105.7,
+    "x0": 137.0,
+    "x1": 160.8,
+    "text": "2023",
+    "size": 10.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4113.0,
+    "y1": 4143.5,
+    "x0": 137.0,
+    "x1": 241.5,
+    "text": "$1,200.38",
+    "size": 24.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4117.0,
+    "y1": 4139.9,
+    "x0": 741.0,
+    "x1": 1296.0,
+    "text": "ByteSpace supports individuals or entities in the creation, publication,",
+    "size": 18.0,
+    "font": "Type3 (2037 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4146.0,
+    "y1": 4168.9,
+    "x0": 741.0,
+    "x1": 1078.6,
+    "text": "and administration of educational courses.",
+    "size": 18.0,
+    "font": "Type3 (3045 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4159.0,
+    "y1": 4171.7,
+    "x0": 145.1,
+    "x1": 166.9,
+    "text": "+12$",
+    "size": 10.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4214.0,
+    "y1": 4236.9,
+    "x0": 773.0,
+    "x1": 939.9,
+    "text": "Share Your Expertise",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4254.0,
+    "y1": 4276.9,
+    "x0": 773.0,
+    "x1": 954.3,
+    "text": "Monetize Your Passion",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4294.0,
+    "y1": 4316.9,
+    "x0": 773.0,
+    "x1": 971.2,
+    "text": "Flexibility and Autonomy",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4295.0,
+    "y1": 4315.3,
+    "x0": 420.0,
+    "x1": 534.3,
+    "text": "Happy Students",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4318.5,
+    "y1": 4331.2,
+    "x0": 420.0,
+    "x1": 461.3,
+    "text": "4.5 (240)",
+    "size": 10.0,
+    "font": "Type3 (2037 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4334.0,
+    "y1": 4356.9,
+    "x0": 773.0,
+    "x1": 927.6,
+    "text": "Build a Community",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4356.0,
+    "y1": 4371.2,
+    "x0": 621.0,
+    "x1": 644.1,
+    "text": "2K+",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4663.0,
+    "y1": 4719.0,
+    "x0": 437.7,
+    "x1": 1011.9,
+    "text": "Unlock Your Potential as a",
+    "size": 44.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4716.0,
+    "y1": 4772.0,
+    "x0": 460.8,
+    "x1": 979.2,
+    "text": "Creator with ByteSpace",
+    "size": 44.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4814.0,
+    "y1": 4836.9,
+    "x0": 253.0,
+    "x1": 1192.0,
+    "text": "Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4843.0,
+    "y1": 4865.9,
+    "x0": 239.4,
+    "x1": 1205.6,
+    "text": "part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4872.0,
+    "y1": 4894.9,
+    "x0": 424.1,
+    "x1": 1015.9,
+    "text": "expertise by publishing your finest course on the ByteSpace Course Library.",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 4950.0,
+    "y1": 4972.9,
+    "x0": 658.0,
+    "x1": 781.5,
+    "text": "Join as Creator",
+    "size": 18.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5145.0,
+    "y1": 5167.9,
+    "x0": 738.0,
+    "x1": 1292.7,
+    "text": "At ByteSpace, our vibrant community of learners and creators is at the",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5174.0,
+    "y1": 5196.9,
+    "x0": 738.0,
+    "x1": 1311.1,
+    "text": "heart of what we do. Hear directly from those who have experienced the",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5179.0,
+    "y1": 5235.0,
+    "x0": 118.0,
+    "x1": 538.0,
+    "text": "Discover What Our",
+    "size": 44.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5203.0,
+    "y1": 5225.9,
+    "x0": 738.0,
+    "x1": 1305.6,
+    "text": "transformative journey of learning and creating on our platform. Explore",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5232.0,
+    "y1": 5288.0,
+    "x0": 118.0,
+    "x1": 585.9,
+    "text": "Community Is Saying",
+    "size": 44.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5232.0,
+    "y1": 5254.9,
+    "x0": 738.0,
+    "x1": 1303.7,
+    "text": "testimonials that reflect the diverse perspectives of enthusiastic learners",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5261.0,
+    "y1": 5283.9,
+    "x0": 738.0,
+    "x1": 955.7,
+    "text": "and accomplished creators.",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5486.0,
+    "y1": 5511.4,
+    "x0": 142.0,
+    "x1": 227.3,
+    "text": "Sarah M.",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5488.0,
+    "y1": 5513.4,
+    "x0": 557.0,
+    "x1": 641.6,
+    "text": "James L.",
+    "size": 20.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5488.0,
+    "y1": 5513.4,
+    "x0": 972.0,
+    "x1": 1035.3,
+    "text": "Alex B.",
+    "size": 20.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5514.0,
+    "y1": 5536.9,
+    "x0": 142.0,
+    "x1": 299.9,
+    "text": "Enthusiastic Learner",
+    "size": 18.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5518.0,
+    "y1": 5540.9,
+    "x0": 557.0,
+    "x1": 684.2,
+    "text": "Lifelong Learner",
+    "size": 18.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5518.0,
+    "y1": 5540.9,
+    "x0": 972.0,
+    "x1": 1098.8,
+    "text": "Inspired Creator",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5567.0,
+    "y1": 5589.9,
+    "x0": 142.0,
+    "x1": 396.9,
+    "text": "\"ByteSpace has transformed my",
+    "size": 18.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5571.0,
+    "y1": 5593.9,
+    "x0": 557.0,
+    "x1": 814.0,
+    "text": "\"I've tried several online learning",
+    "size": 18.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5571.0,
+    "y1": 5593.9,
+    "x0": 972.0,
+    "x1": 1258.6,
+    "text": "\"As a creator, ByteSpace has been a",
+    "size": 18.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5596.0,
+    "y1": 5618.9,
+    "x0": 142.0,
+    "x1": 461.5,
+    "text": "approach to learning. The diverse range",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5600.0,
+    "y1": 5622.9,
+    "x0": 557.0,
+    "x1": 876.0,
+    "text": "platforms, and ByteSpace stands out for",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5600.0,
+    "y1": 5622.9,
+    "x0": 972.0,
+    "x1": 1301.9,
+    "text": "game-changer for me. The Course Editor",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5625.0,
+    "y1": 5647.9,
+    "x0": 142.0,
+    "x1": 435.0,
+    "text": "of courses and the quality of content",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5629.0,
+    "y1": 5651.9,
+    "x0": 557.0,
+    "x1": 872.0,
+    "text": "its vibrant community and the variety of",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5629.0,
+    "y1": 5651.9,
+    "x0": 972.0,
+    "x1": 1297.0,
+    "text": "is user-friendly, and the support from the",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5654.0,
+    "y1": 5676.9,
+    "x0": 142.0,
+    "x1": 459.9,
+    "text": "provided by creators have exceeded my",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5658.0,
+    "y1": 5680.9,
+    "x0": 557.0,
+    "x1": 860.0,
+    "text": "courses available. The easy navigation",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5658.0,
+    "y1": 5680.9,
+    "x0": 972.0,
+    "x1": 1279.4,
+    "text": "community is incredible. It's fulfilling to",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5683.0,
+    "y1": 5705.9,
+    "x0": 142.0,
+    "x1": 465.3,
+    "text": "expectations. The platform truly fosters a",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5687.0,
+    "y1": 5709.9,
+    "x0": 557.0,
+    "x1": 860.9,
+    "text": "and engaging content make it a go-to",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5687.0,
+    "y1": 5709.9,
+    "x0": 972.0,
+    "x1": 1298.0,
+    "text": "see my courses making a positive impact",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5712.0,
+    "y1": 5734.9,
+    "x0": 142.0,
+    "x1": 401.9,
+    "text": "sense of community and lifelong",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5716.0,
+    "y1": 5738.9,
+    "x0": 557.0,
+    "x1": 778.9,
+    "text": "platform for continuous skill",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5716.0,
+    "y1": 5738.9,
+    "x0": 972.0,
+    "x1": 1133.4,
+    "text": "on learners globally.\"",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5741.0,
+    "y1": 5763.9,
+    "x0": 142.0,
+    "x1": 214.4,
+    "text": "learning.\"",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5745.0,
+    "y1": 5767.9,
+    "x0": 557.0,
+    "x1": 667.8,
+    "text": "development.\"",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5925.0,
+    "y1": 5945.3,
+    "x0": 740.0,
+    "x1": 791.3,
+    "text": "Browse",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5925.0,
+    "y1": 5945.3,
+    "x0": 1154.0,
+    "x1": 1213.0,
+    "text": "Platform",
+    "size": 16.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5929.0,
+    "y1": 5959.5,
+    "x0": 157.0,
+    "x1": 290.7,
+    "text": "ByteSpace",
+    "size": 24.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5973.0,
+    "y1": 5990.8,
+    "x0": 740.0,
+    "x1": 847.6,
+    "text": "Featured Courses",
+    "size": 14.0,
+    "font": "Type3 (1095 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5973.0,
+    "y1": 5990.8,
+    "x0": 947.0,
+    "x1": 1028.4,
+    "text": "Development",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5973.0,
+    "y1": 5990.8,
+    "x0": 1154.0,
+    "x1": 1265.8,
+    "text": "Become a Creator",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 5978.0,
+    "y1": 5995.8,
+    "x0": 120.0,
+    "x1": 592.5,
+    "text": "Stay Up to date with our latest features and releases by joining our newsletter.",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6011.0,
+    "y1": 6028.8,
+    "x0": 740.0,
+    "x1": 863.7,
+    "text": "Featured Categories",
+    "size": 14.0,
+    "font": "Type3 (1095 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6011.0,
+    "y1": 6028.8,
+    "x0": 947.0,
+    "x1": 1007.9,
+    "text": "Marketing",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6011.0,
+    "y1": 6028.8,
+    "x0": 1154.0,
+    "x1": 1256.1,
+    "text": "Affiliate Program",
+    "size": 14.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6049.0,
+    "y1": 6066.8,
+    "x0": 740.0,
+    "x1": 792.9,
+    "text": "Business",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6049.0,
+    "y1": 6066.8,
+    "x0": 947.0,
+    "x1": 1025.9,
+    "text": "Photography",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6049.0,
+    "y1": 6066.8,
+    "x0": 1154.0,
+    "x1": 1202.8,
+    "text": "Contact",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6055.0,
+    "y1": 6077.9,
+    "x0": 544.0,
+    "x1": 604.9,
+    "text": "Search",
+    "size": 18.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6059.0,
+    "y1": 6079.4,
+    "x0": 144.3,
+    "x1": 257.7,
+    "text": "Enter your email",
+    "size": 16.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6087.0,
+    "y1": 6104.8,
+    "x0": 740.0,
+    "x1": 751.0,
+    "text": "IT",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6087.0,
+    "y1": 6104.8,
+    "x0": 947.0,
+    "x1": 995.3,
+    "text": "Finance",
+    "size": 14.0,
+    "font": "Type3 (1095 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6087.0,
+    "y1": 6104.8,
+    "x0": 1154.0,
+    "x1": 1182.5,
+    "text": "Help",
+    "size": 14.0,
+    "font": "Type3 (1567 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6121.0,
+    "y1": 6136.2,
+    "x0": 120.0,
+    "x1": 584.3,
+    "text": "By subscribing, you agree to our Privacy Policy and consent to receive updates from our",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6125.0,
+    "y1": 6142.8,
+    "x0": 740.0,
+    "x1": 782.4,
+    "text": "Design",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6125.0,
+    "y1": 6142.8,
+    "x0": 947.0,
+    "x1": 980.3,
+    "text": "Sport",
+    "size": 14.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6125.0,
+    "y1": 6142.8,
+    "x0": 1154.0,
+    "x1": 1190.9,
+    "text": "About",
+    "size": 14.0,
+    "font": "Type3 (3553 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6140.0,
+    "y1": 6155.2,
+    "x0": 120.0,
+    "x1": 170.9,
+    "text": "company.",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6312.0,
+    "y1": 6327.3,
+    "x0": 120.0,
+    "x1": 324.8,
+    "text": "@ 2023 ByteSpace. All rights reserved.",
+    "size": 12.0,
+    "font": "Type3 (1095 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6312.0,
+    "y1": 6327.2,
+    "x0": 1025.0,
+    "x1": 1096.9,
+    "text": "Privacy Policy",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6312.0,
+    "y1": 6327.2,
+    "x0": 1121.0,
+    "x1": 1207.6,
+    "text": "Terms of Service",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  },
+  {
+    "y0": 6312.0,
+    "y1": 6327.2,
+    "x0": 1232.0,
+    "x1": 1319.3,
+    "text": "Cookies Settings",
+    "size": 12.0,
+    "font": "Type3 (4069 0 R)",
+    "color": "0x0"
+  }
+]

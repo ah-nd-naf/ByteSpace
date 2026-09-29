@@ -37,6 +37,10 @@ import courseDetailGallery4 from './course-detail-gallery-4.webp';
 // Pre-tinted 3D Shapes (Transparent PNGs matching Home design)
 import shapeCylinderLime from './shape-cylinder-lime.png';
 import shapeSpring2Lime from './shape-spring-2-lime.png';
+import shapeSpring1Lime from './shape-spring-1-lime.png';
+import shapeSpring1White from './shape-spring-1-white.png';
+import shapeTorusWhite from './shape-torus-white.png';
+import shapePyramidBrightWhite from './shape-pyramid-bright-white.png';
 import shapeConeLime from './shape-cone-lime.png';
 import shapeTorusBlue from './shape-torus-blue.png';
 import shapeSpring1Blue from './shape-spring-1-blue.png';
@@ -96,6 +100,10 @@ export {
   // Pre-tinted 3D Shapes
   shapeCylinderLime,
   shapeSpring2Lime,
+  shapeSpring1Lime,
+  shapeSpring1White,
+  shapeTorusWhite,
+  shapePyramidBrightWhite,
   shapeConeLime,
   shapeTorusBlue,
   shapeSpring1Blue,
