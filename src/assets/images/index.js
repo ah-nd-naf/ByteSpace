@@ -24,7 +24,7 @@ import avatar14 from './avatar-14.webp'; // Reviewer 2
 
 // Cut-outs (Transparent PNGs)
 import cutoutWomanTablet from './cutout-woman-tablet.png';
-import cutoutWomanLaptop from './cutout-woman-laptop.png';
+import cutoutHeroManLaptop from './cutout-hero-man-laptop.png';
 
 // Course Detail & Author
 import courseDetailHeroWoman from './course-detail-hero-woman.webp';
@@ -34,19 +34,22 @@ import courseDetailGallery2 from './course-detail-gallery-2.webp';
 import courseDetailGallery3 from './course-detail-gallery-3.webp';
 import courseDetailGallery4 from './course-detail-gallery-4.webp';
 
-// 3D Shapes (Transparent PNGs)
+// Pre-tinted 3D Shapes (Transparent PNGs matching Home design)
+import shapeCylinderLime from './shape-cylinder-lime.png';
+import shapeSpring2Lime from './shape-spring-2-lime.png';
+import shapeConeLime from './shape-cone-lime.png';
+import shapeTorusBlue from './shape-torus-blue.png';
+import shapeSpring1Blue from './shape-spring-1-blue.png';
+import shapePyramidWhite from './shape-pyramid-white.png';
+import shapeSpring2White from './shape-spring-2-white.png';
+
+// Base Neutral 3D Shapes
 import shapeCone from './shape-cone.png';
 import shapeCylinder from './shape-cylinder.png';
 import shapeTorus from './shape-torus.png';
 import shapeSpring1 from './shape-spring-1.png';
 import shapePyramid from './shape-pyramid.png';
 import shapeSpring2 from './shape-spring-2.png';
-
-// Composite Design Illustrations & Art Cards (2x Rendered Crops)
-import authCardIllustration from './auth-card-illustration.webp';
-import creatorBanner from './creator-banner.webp';
-import courseVideoPlayer from './course-video-player.webp';
-import analyticsRevenueCard from './analytics-revenue-card.webp';
 
 // Export named assets
 export {
@@ -76,7 +79,7 @@ export {
 
   // Cut-outs
   cutoutWomanTablet,
-  cutoutWomanLaptop,
+  cutoutHeroManLaptop,
 
   // Course Details
   courseDetailHeroWoman,
@@ -86,19 +89,22 @@ export {
   courseDetailGallery3,
   courseDetailGallery4,
 
-  // 3D Shapes
+  // Pre-tinted 3D Shapes
+  shapeCylinderLime,
+  shapeSpring2Lime,
+  shapeConeLime,
+  shapeTorusBlue,
+  shapeSpring1Blue,
+  shapePyramidWhite,
+  shapeSpring2White,
+
+  // Base 3D Shapes
   shapeCone,
   shapeCylinder,
   shapeTorus,
   shapeSpring1,
   shapePyramid,
   shapeSpring2,
-
-  // Composite Illustrations & Cards
-  authCardIllustration,
-  creatorBanner,
-  courseVideoPlayer,
-  analyticsRevenueCard,
 };
 
 // Grouped default export
@@ -122,7 +128,7 @@ const images = {
   ],
   cutouts: {
     womanTablet: cutoutWomanTablet,
-    womanLaptop: cutoutWomanLaptop,
+    heroManLaptop: cutoutHeroManLaptop,
   },
   courseDetails: {
     hero: courseDetailHeroWoman,
@@ -134,6 +140,15 @@ const images = {
       courseDetailGallery4,
     ],
   },
+  tintedShapes: {
+    cylinderLime: shapeCylinderLime,
+    spring2Lime: shapeSpring2Lime,
+    coneLime: shapeConeLime,
+    torusBlue: shapeTorusBlue,
+    spring1Blue: shapeSpring1Blue,
+    pyramidWhite: shapePyramidWhite,
+    spring2White: shapeSpring2White,
+  },
   shapes: {
     cone: shapeCone,
     cylinder: shapeCylinder,
@@ -141,12 +156,6 @@ const images = {
     spring1: shapeSpring1,
     pyramid: shapePyramid,
     spring2: shapeSpring2,
-  },
-  composite: {
-    authCard: authCardIllustration,
-    creatorBanner,
-    videoPlayer: courseVideoPlayer,
-    analyticsRevenue: analyticsRevenueCard,
   },
 };
 
