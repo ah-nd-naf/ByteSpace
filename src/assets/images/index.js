@@ -42,6 +42,7 @@ import shapeSpring1White from './shape-spring-1-white.png';
 import shapeTorusWhite from './shape-torus-white.png';
 import shapePyramidBrightWhite from './shape-pyramid-bright-white.png';
 import shapeConeLime from './shape-cone-lime.png';
+import shapeTorusLime from './shape-torus-lime.png';
 import shapeTorusBlue from './shape-torus-blue.png';
 import shapeSpring1Blue from './shape-spring-1-blue.png';
 import shapePyramidWhite from './shape-pyramid-white.png';
@@ -121,6 +122,7 @@ export {
   shapeTorusWhite,
   shapePyramidBrightWhite,
   shapeConeLime,
+  shapeTorusLime,
   shapeTorusBlue,
   shapeSpring1Blue,
   shapePyramidWhite,

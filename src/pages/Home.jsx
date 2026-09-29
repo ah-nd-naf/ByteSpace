@@ -26,11 +26,15 @@ import {
   cutoutWomanTablet,
   shapeCylinderLime,
   shapeSpring1Lime,
+  shapeSpring2Lime,
   shapeSpring1White,
   shapeTorusWhite,
   shapePyramidBrightWhite,
   shapeConeLime,
   shapePyramidWhite,
+  shapeCone,
+  shapeCylinder,
+  shapeTorusLime,
   shapeTorusBlue,
   shapeSpring1Blue,
   learningPathDesign,
@@ -245,7 +249,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="w-full font-['Poppins']">
+    <div className="w-full font-['Poppins'] overflow-x-hidden">
       {/* 
         ========================================================================
         1. HERO SECTION (1440 x 1024, .bg-hero-grid on #003BE2, overflow-hidden)
@@ -647,157 +651,215 @@ export default function Home() {
 
       {/* 
         ========================================================================
-        5. FEATURE SPLIT SECTIONS (Row 1 & Row 2 with soft radial glow)
+        5. FEATURE SPLIT SECTIONS (Row 1 & Row 2 matching exact Figma prototype)
         ========================================================================
       */}
-      <section className="w-full py-24 bg-white space-y-28">
-        <Container className="space-y-28">
+      <section
+        className="w-full py-24 lg:py-32 relative overflow-hidden space-y-28 lg:space-y-36"
+        style={{
+          background: `
+            radial-gradient(ellipse 700px 550px at 12% 20%, rgba(203, 252, 1, 0.32) 0%, rgba(203, 252, 1, 0) 70%),
+            radial-gradient(ellipse 600px 500px at 2% 48%, rgba(0, 59, 226, 0.10) 0%, rgba(0, 59, 226, 0) 70%),
+            radial-gradient(ellipse 650px 550px at 98% 22%, rgba(0, 59, 226, 0.08) 0%, rgba(0, 59, 226, 0) 70%),
+            radial-gradient(ellipse 650px 600px at 6% 82%, rgba(203, 252, 1, 0.36) 0%, rgba(203, 252, 1, 0) 70%),
+            radial-gradient(ellipse 750px 650px at 96% 78%, rgba(0, 59, 226, 0.14) 0%, rgba(0, 59, 226, 0) 70%),
+            #FFFFFF
+          `,
+        }}
+      >
+        <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-5 space-y-28 lg:space-y-36">
           {/* Row 1: "Your Path to Professional Growth Starts Here!" */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Content Column */}
-            <div className="lg:col-span-6 space-y-6">
-              <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
-                Your Path to Professional Growth Starts Here!
+            <div className="lg:col-span-6 space-y-7">
+              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold text-[#1D1E20] tracking-[-0.02em] leading-[1.14]">
+                Your Path to Professional <br className="hidden sm:inline" />Growth Starts Here!
               </h2>
 
-              <p className="text-[#4B4C53] text-base sm:text-lg leading-[1.6]">
+              <p className="text-[#4B4C53] text-base sm:text-[17px] leading-[1.65] max-w-[500px] font-normal">
                 Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
               </p>
 
-              {/* Stats Counters (12K Students, 70+ Courses, 16 Creators) */}
-              <div className="grid grid-cols-3 gap-6 pt-4 border-t border-[#E5E6E8]">
+              {/* Stats Counters (12K Students, 70+ Courses, 16 Creators - Exact Figma Typography & Spacing) */}
+              <div className="flex items-center gap-12 sm:gap-16 lg:gap-20 pt-2">
                 <div>
-                  <span className="block text-3xl sm:text-4xl font-bold text-[#003BE2]">12K</span>
-                  <span className="text-sm sm:text-base text-[#4B4C53] mt-1 font-medium">Students</span>
+                  <span className="block text-[44px] sm:text-[48px] font-bold text-[#003BE2] leading-none">12K</span>
+                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-medium">Students</span>
                 </div>
                 <div>
-                  <span className="block text-3xl sm:text-4xl font-bold text-[#003BE2]">70+</span>
-                  <span className="text-sm sm:text-base text-[#4B4C53] mt-1 font-medium">Courses</span>
+                  <span className="block text-[44px] sm:text-[48px] font-bold text-[#003BE2] leading-none">70+</span>
+                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-medium">Courses</span>
                 </div>
                 <div>
-                  <span className="block text-3xl sm:text-4xl font-bold text-[#003BE2]">16</span>
-                  <span className="text-sm sm:text-base text-[#4B4C53] mt-1 font-medium">Creators</span>
+                  <span className="block text-[44px] sm:text-[48px] font-bold text-[#003BE2] leading-none">16</span>
+                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-medium">Creators</span>
                 </div>
-              </div>
-
-              <div className="pt-2">
-                <Link
-                  to="/search"
-                  className="inline-block bg-[#003BE2] hover:bg-[#0030B8] text-white font-semibold text-base px-8 py-3.5 rounded-[12px] transition-all active:scale-95 shadow-md"
-                >
-                  Explore Courses
-                </Link>
               </div>
             </div>
 
-            {/* Right Visual Column (Student cutout + soft radial glow + floating card) */}
-            <div className="lg:col-span-6 relative flex justify-center items-center">
-              {/* Soft radial glow (lime/blue) behind student cutout */}
-              <div className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-[#003BE2]/25 via-[#CBFC01]/35 to-transparent blur-3xl -z-10 pointer-events-none" />
-
-              <div className="relative w-full max-w-[500px] flex justify-center">
-                <img
-                  src={cutoutHeroManLaptop}
-                  alt="Student Growth"
-                  className="w-full h-auto object-contain max-h-[460px] mx-auto relative z-10"
-                />
-
-                {/* 3D Shapes around Student Photo */}
-                <img src={shapeConeLime} alt="" className="absolute -left-6 top-6 w-24 h-24 object-contain pointer-events-none drop-shadow-lg z-20" />
-                <img src={shapePyramidWhite} alt="" className="absolute -right-8 top-1/3 w-28 h-28 object-contain pointer-events-none drop-shadow-lg z-20" />
-                <img src={shapeTorusBlue} alt="" className="absolute left-10 -bottom-8 w-32 h-32 object-contain pointer-events-none drop-shadow-lg z-20" />
-
-                {/* Floating 55% Card */}
-                <div className="absolute top-8 right-4 bg-white p-4 rounded-[16px] shadow-floating border border-[#E5E6E8] z-20">
-                  <span className="text-xs text-[#4B4C53] font-medium block">Learning Progress</span>
-                  <span className="text-3xl font-bold text-[#242528]">55%</span>
+            {/* Right Visual Column (Figma: CourseCard + 3D Spring + Student Cutout + Learning Progress Card) */}
+            <div className="lg:col-span-6 relative flex justify-center items-center w-full max-w-[580px] mx-auto min-h-[480px] sm:min-h-[520px]">
+              {/* Back Layer 1: Floating Figma Course Card behind Student */}
+              <div className="absolute left-0 sm:left-4 top-2 sm:top-4 w-[270px] sm:w-[310px] bg-white rounded-[24px] border border-[#E2E4E8] p-3 shadow-lg z-10 pointer-events-none">
+                <div className="aspect-[341/200] rounded-[16px] overflow-hidden relative mb-2.5 bg-[#F5F5F6]">
+                  <img src={course1} alt="Figma Course" className="w-full h-full object-cover" />
+                  <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between gap-1 pointer-events-none">
+                    <span className="bg-white/70 backdrop-blur-md px-2 py-0.5 rounded-full text-[10px] font-medium text-[#242528] shadow-xs">
+                      17 Lessons
+                    </span>
+                    <span className="bg-white/70 backdrop-blur-md px-2 py-0.5 rounded-full text-[10px] font-medium text-[#242528] shadow-xs">
+                      2 hours 16 mins
+                    </span>
+                  </div>
                 </div>
+                <div className="space-y-1">
+                  <div className="flex items-center justify-between gap-1">
+                    <h4 className="text-[14px] sm:text-[15px] font-semibold text-[#1D1E20] line-clamp-1">
+                      Learn Figma from Basic
+                    </h4>
+                    <span className="text-[12px] text-[#6C7278] shrink-0">4.5 ★</span>
+                  </div>
+                  <p className="text-[11px] text-[#82868E]">
+                    by <span className="text-[#003BE2]">purepearl studio</span>
+                  </p>
+                  <div className="flex items-center justify-between pt-1">
+                    <span className="bg-[#F5F5F6] text-[#4B4C53] rounded-full px-2.5 py-0.5 text-[11px]">
+                      Beginner
+                    </span>
+                    <div className="flex items-center -space-x-1.5">
+                      <img src={avatar08} alt="" className="w-5 h-5 rounded-full object-cover border border-white" />
+                      <img src={avatar03} alt="" className="w-5 h-5 rounded-full object-cover border border-white" />
+                      <span className="w-5 h-5 rounded-full bg-[#CBFC01] text-[#242528] text-[8px] font-bold flex items-center justify-center border border-white">
+                        26+
+                      </span>
+                    </div>
+                  </div>
+                  <div className="pt-1">
+                    <span className="text-[16px] font-bold text-[#003BE2]">$25</span>
+                    <span className="text-[11px] text-[#82868E]">/lifetime</span>
+                  </div>
+                </div>
+              </div>
 
-                {/* Floating Rating */}
-                <div className="absolute bottom-6 left-4 bg-white px-4 py-2.5 rounded-[12px] shadow-floating border border-[#E5E6E8] flex items-center gap-2 z-20">
-                  <span className="text-[#CBFC01] text-lg">★</span>
-                  <span className="text-sm font-semibold text-[#242528]">4.5</span>
-                  <span className="text-xs text-[#82868E]">(120 Reviews)</span>
+              {/* Back Layer 2: 3D Lime Spring Shape */}
+              <img
+                src={shapeSpring2Lime}
+                alt=""
+                className="absolute right-0 sm:right-4 top-8 sm:top-12 w-28 sm:w-36 object-contain pointer-events-none z-10 drop-shadow-md"
+              />
+
+              {/* Middle Layer: Student Cutout with Headphones & Laptop */}
+              <img
+                src={cutoutHeroManLaptop}
+                alt="Professional Growth"
+                className="w-auto h-[460px] sm:h-[530px] object-contain relative z-20 mx-auto drop-shadow-2xl"
+              />
+
+              {/* Front Layer: Floating "Learning Progress 55%" Card */}
+              <div className="absolute right-0 sm:right-6 top-[220px] sm:top-[260px] bg-white rounded-[20px] p-5 shadow-xl border border-white/80 z-30 min-w-[210px]">
+                <span className="text-[13px] font-normal text-[#6C7278] block mb-1.5">
+                  Learning Progress
+                </span>
+                <span className="text-[36px] sm:text-[40px] font-bold text-[#1D1E20] leading-none mb-3 block">
+                  55%
+                </span>
+                <div className="w-full bg-[#EAEBED] h-2 rounded-full overflow-hidden">
+                  <div className="bg-[#CBFC01] h-full rounded-full w-[55%]" />
                 </div>
               </div>
             </div>
           </div>
 
           {/* Row 2: "Create & Manage Courses Easily." */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            {/* Left Visual Column (Female Creator cutout + soft radial glow + revenue & bar chart cards) */}
-            <div className="lg:col-span-6 order-2 lg:order-1 relative flex justify-center items-center mt-10 lg:mt-0">
-              {/* Soft radial glow (lime/blue) */}
-              <div className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-[#CBFC01]/35 via-[#003BE2]/25 to-transparent blur-[100px] -z-10 pointer-events-none" />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+            {/* Left Visual Column (Figma: Total Revenue + Year to Date + 3D Spring + Female Creator + Happy Students) */}
+            <div className="lg:col-span-6 relative flex justify-center items-center w-full max-w-[580px] mx-auto min-h-[480px] sm:min-h-[520px]">
+              {/* Back Layer 1: Floating Blue Revenue Cards on Left */}
+              <div className="absolute left-0 sm:left-4 top-6 sm:top-8 bg-[#003BE2] text-white rounded-[18px] p-4 shadow-lg z-10 w-[160px] sm:w-[175px]">
+                <span className="text-[13px] font-semibold text-white leading-tight block">
+                  Total Revenue
+                </span>
+                <span className="text-[11px] text-[#A6C0FF] font-normal block mt-0.5">
+                  July 1-28
+                </span>
+                <span className="text-[20px] sm:text-[22px] font-bold text-white mt-1.5 mb-2.5 block leading-none">
+                  $120.29
+                </span>
+                <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
+                  <div className="bg-[#CBFC01] h-full rounded-full w-[65%]" />
+                </div>
+              </div>
 
-              <div className="relative w-full max-w-[500px] flex justify-center">
-                <img
-                  src={cutoutWomanTablet}
-                  alt="Creator Teaching"
-                  className="w-full h-auto object-contain max-h-[460px] mx-auto relative z-10"
-                />
+              <div className="absolute left-0 sm:left-4 top-[175px] sm:top-[190px] bg-[#003BE2] text-white rounded-[18px] p-4 shadow-lg z-10 w-[160px] sm:w-[175px]">
+                <span className="text-[13px] font-semibold text-white leading-tight block">
+                  Year to Date
+                </span>
+                <span className="text-[11px] text-[#A6C0FF] font-normal block mt-0.5">
+                  2023
+                </span>
+                <span className="text-[20px] sm:text-[22px] font-bold text-white mt-1.5 mb-2 block leading-none">
+                  $1,200.38
+                </span>
+                <span className="inline-block bg-[#CBFC01] text-[#1D1E20] text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+                  +12$
+                </span>
+              </div>
 
-                {/* Floating Revenue Card 1 */}
-                <div className="absolute top-6 left-2 bg-white p-4 rounded-[16px] shadow-floating border border-[#E5E6E8] min-w-[150px] z-20">
-                  <span className="text-xs text-[#82868E] block">Total Revenue</span>
-                  <span className="text-xs text-[#82868E] block">July 1-28</span>
-                  <div className="flex items-center justify-between mt-1">
-                    <span className="text-lg font-bold text-[#242528]">$120.29</span>
-                    <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-1.5 py-0.5 rounded">
-                      +12.5%
-                    </span>
+              {/* Back Layer 2: 3D Lime Spring Shape */}
+              <img
+                src={shapeSpring2Lime}
+                alt=""
+                className="absolute right-4 sm:right-10 top-12 sm:top-16 w-28 sm:w-36 object-contain pointer-events-none z-10 drop-shadow-md"
+              />
+
+              {/* Middle Layer: Female Creator Cutout with Headset & Tablet */}
+              <img
+                src={cutoutWomanTablet}
+                alt="Creator Teaching"
+                className="w-auto h-[460px] sm:h-[530px] object-contain relative z-20 mx-auto drop-shadow-2xl"
+              />
+
+              {/* Front Layer: Floating "Happy Students" Card (Exact Figma Prototype Dimensions & Lime Star) */}
+              <div className="absolute -right-2 sm:right-2 lg:-right-4 bottom-10 sm:bottom-14 bg-white rounded-[22px] p-4 shadow-[0_16px_36px_rgba(0,0,0,0.08)] border border-[#F0F1F3] z-30 w-[275px]">
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <span className="text-[15px] font-bold text-[#1D1E20]">
+                    Happy Students
+                  </span>
+                  <div className="flex items-center gap-1 text-[12px] text-[#4B4C53] font-medium">
+                    <span>4.5</span>
+                    <span>(240)</span>
+                    <svg className="w-3.5 h-3.5 fill-[#CBFC01] text-[#CBFC01] shrink-0" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
                   </div>
                 </div>
 
-                {/* Floating Revenue Card 2 */}
-                <div className="absolute bottom-6 left-2 bg-white p-4 rounded-[16px] shadow-floating border border-[#E5E6E8] min-w-[160px] z-20">
-                  <span className="text-xs text-[#82868E] block">Year to Date</span>
-                  <span className="text-xs text-[#82868E] block">2023</span>
-                  <div className="flex items-center justify-between mt-1">
-                    <span className="text-lg font-bold text-[#242528]">$1,200.38</span>
-                    <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-1.5 py-0.5 rounded">
-                      +12.5%
-                    </span>
-                  </div>
+                <div className="flex items-center -space-x-2.5 w-full">
+                  <img src={avatar01} alt="Student" className="w-[38px] h-[38px] rounded-full object-cover border-2 border-white shadow-xs shrink-0" />
+                  <img src={avatar08} alt="Student" className="w-[38px] h-[38px] rounded-full object-cover border-2 border-white shadow-xs shrink-0" />
+                  <img src={avatar03} alt="Student" className="w-[38px] h-[38px] rounded-full object-cover border-2 border-white shadow-xs shrink-0" />
+                  <img src={avatar02} alt="Student" className="w-[38px] h-[38px] rounded-full object-cover border-2 border-white shadow-xs shrink-0" />
+                  <img src={avatar04} alt="Student" className="w-[38px] h-[38px] rounded-full object-cover border-2 border-white shadow-xs shrink-0" />
+                  <img src={avatar06} alt="Student" className="w-[38px] h-[38px] rounded-full object-cover border-2 border-white shadow-xs shrink-0" />
+                  <img src={avatar11} alt="Student" className="w-[38px] h-[38px] rounded-full object-cover border-2 border-white shadow-xs shrink-0" />
+                  <span className="w-[38px] h-[38px] rounded-full bg-[#CBFC01] text-[#1D1E20] text-[11px] font-bold flex items-center justify-center border-2 border-white shadow-xs shrink-0">
+                    2K+
+                  </span>
                 </div>
-
-                {/* Floating Bar Chart Card */}
-                <div className="absolute top-28 -right-2 bg-white p-4 rounded-[16px] shadow-floating border border-[#E5E6E8] z-20 flex flex-col gap-2 min-w-[140px]">
-                  <span className="text-[11px] font-semibold text-[#82868E]">Enrollment Trends</span>
-                  <div className="flex items-end gap-2 h-14 pt-2">
-                    <div className="w-3.5 bg-[#003BE2]/30 rounded-t h-[45%]" />
-                    <div className="w-3.5 bg-[#003BE2] rounded-t h-[65%]" />
-                    <div className="w-3.5 bg-[#CBFC01] rounded-t h-[85%]" />
-                    <div className="w-3.5 bg-[#003BE2] rounded-t h-[100%]" />
-                  </div>
-                  <span className="text-[11px] text-emerald-600 font-bold">+18.5% this month</span>
-                </div>
-
-                {/* 3D Shapes: shapeConeLime on top-right, shapeSpring1Blue on bottom-left */}
-                <img
-                  src={shapeConeLime}
-                  alt=""
-                  className="absolute -right-6 -top-4 w-28 h-28 object-contain pointer-events-none drop-shadow-lg -z-10"
-                />
-                <img
-                  src={shapeSpring1Blue}
-                  alt=""
-                  className="absolute -left-12 -bottom-10 w-32 h-32 object-contain pointer-events-none drop-shadow-lg -z-10"
-                />
               </div>
             </div>
 
             {/* Right Content Column */}
-            <div className="lg:col-span-6 order-1 lg:order-2 space-y-6">
-              <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
-                Create & Manage Courses Easily.
+            <div className="lg:col-span-6 space-y-7">
+              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold text-[#1D1E20] tracking-[-0.02em] leading-[1.14]">
+                Create & Manage <br className="hidden sm:inline" />Courses Easily.
               </h2>
 
-              <p className="text-[#4B4C53] text-base sm:text-lg leading-[1.6]">
-                ByteSpace supports individuals or entities in the creation, publication, and administration of educational courses.
+              <p className="text-[#4B4C53] text-base sm:text-[17px] leading-[1.65] max-w-[500px] font-normal">
+                <strong className="text-[#1D1E20] font-semibold">ByteSpace</strong> supports individuals or entities in the creation, publication, and administration of educational courses.
               </p>
 
-              {/* 4 Checklist Points */}
+              {/* 4 Checklist Points (Blue circle with white checkmark) */}
               <div className="space-y-4 pt-2">
                 {[
                   'Share Your Expertise',
@@ -805,10 +867,10 @@ export default function Home() {
                   'Flexibility and Autonomy',
                   'Build a Community',
                 ].map((point) => (
-                  <div key={point} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#CBFC01] flex items-center justify-center shrink-0">
+                  <div key={point} className="flex items-center gap-3.5">
+                    <div className="w-6 h-6 rounded-full bg-[#003BE2] flex items-center justify-center shrink-0 shadow-xs">
                       <svg
-                        className="w-3.5 h-3.5 text-[#242528]"
+                        className="w-3.5 h-3.5 text-white"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -817,22 +879,15 @@ export default function Home() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-lg font-semibold text-[#242528]">{point}</span>
+                    <span className="text-[17px] sm:text-[18px] font-medium text-[#1D1E20]">
+                      {point}
+                    </span>
                   </div>
                 ))}
               </div>
-
-              <div className="pt-4">
-                <Link
-                  to="/register"
-                  className="inline-block bg-[#CBFC01] hover:bg-[#b8e400] text-[#242528] font-semibold text-base px-8 py-3.5 rounded-[12px] transition-all active:scale-95 shadow-sm"
-                >
-                  Become a Creator
-                </Link>
-              </div>
             </div>
           </div>
-        </Container>
+        </div>
       </section>
 
       {/* 
@@ -840,54 +895,140 @@ export default function Home() {
         6. CREATOR CTA BANNER ("Unlock Your Potential as a Creator with ByteSpace")
         ========================================================================
       */}
-      <section className="relative w-full bg-hero-grid bg-[#003BE2] py-28 mt-8 text-white">
-        {/* Surrounding 3D Shapes positioned without overlapping the 2-line heading */}
-        <div className="absolute inset-0 pointer-events-none hidden md:block">
-          {/* Top-Left: shapeConeLime */}
-          <img
-            src={shapeConeLime}
-            alt=""
-            className="absolute left-4 lg:left-14 -top-8 w-36 lg:w-48 object-contain opacity-95 drop-shadow-lg"
-          />
-          {/* Bottom-Left: shapeTorusBlue */}
-          <img
-            src={shapeTorusBlue}
-            alt=""
-            className="absolute left-6 lg:left-16 -bottom-10 w-44 lg:w-56 object-contain opacity-90"
-          />
-          {/* Top-Right: shapePyramidWhite placed comfortably away from 2-line text */}
-          <img
-            src={shapePyramidWhite}
-            alt=""
-            className="absolute right-6 lg:right-20 -top-8 w-28 lg:w-36 object-contain opacity-85 drop-shadow-lg"
-          />
-          {/* Bottom-Right: shapeCylinderLime replacing spring-white */}
-          <img
-            src={shapeCylinderLime}
-            alt=""
-            className="absolute right-6 lg:right-16 -bottom-8 w-36 lg:w-48 object-contain opacity-90 drop-shadow-lg"
-          />
-        </div>
+      <section className="relative w-full bg-hero-grid bg-[#003BE2] text-white z-10 overflow-hidden min-h-[488px] h-auto lg:h-[488px]">
+        <div className="relative mx-auto w-full max-w-[1440px] min-h-[488px] h-auto lg:h-[488px] flex items-center justify-center py-20 lg:py-0">
+          {/* Exact Figma 3D Shapes positioned on 1440px canvas clipped within banner frame */}
+          <div className="pointer-events-none hidden md:block">
+            {/* 1. Top-Left: shapeSpring1Lime (w=387, h=387, left=-122, top=-162) */}
+            <img
+              src={shapeSpring1Lime}
+              alt=""
+              className="absolute select-none object-contain"
+              style={{
+                left: '-122px',
+                top: '-162px',
+                width: '387px',
+                height: '387px',
+                zIndex: 2,
+              }}
+            />
 
-        <Container className="relative z-10 text-center max-w-[850px] mx-auto space-y-6">
-          {/* Exact 2 lines heading as in Figma */}
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-white tracking-[-0.01em] leading-[1.2] max-w-[680px] mx-auto">
-            Unlock Your Potential as a <br className="hidden sm:inline" />Creator with ByteSpace
-          </h2>
+            {/* 2. Mid-Left: shapeSpring1White (w=175, h=175, left=178, top=5, rotation=-180deg) */}
+            <img
+              src={shapeSpring1White}
+              alt=""
+              className="absolute select-none object-contain"
+              style={{
+                left: '178px',
+                top: '5px',
+                width: '175px',
+                height: '175px',
+                transform: 'rotate(-180deg)',
+                zIndex: 2,
+              }}
+            />
 
-          <p className="text-white/85 text-base sm:text-lg leading-relaxed max-w-[780px] mx-auto font-normal">
-            Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.
-          </p>
+            {/* 3. Bottom-Left: shapeCone (Pure white cone pointing up, w=189, h=189, left=-50, top=225) */}
+            <img
+              src={shapeCone}
+              alt=""
+              className="absolute select-none object-contain"
+              style={{
+                left: '-50px',
+                top: '225px',
+                width: '189px',
+                height: '189px',
+                zIndex: 2,
+              }}
+            />
 
-          <div className="pt-4">
-            <Link
-              to="/register"
-              className="inline-block bg-[#CBFC01] hover:bg-[#b8e400] text-[#242528] font-semibold text-lg px-10 py-4 rounded-[12px] transition-all active:scale-95 shadow-lg"
-            >
-              Join as Creator
-            </Link>
+            {/* 4. Bottom-Left: shapeTorusLime (Brand lime torus ring, w=342, h=342, left=20, top=299) */}
+            <img
+              src={shapeTorusLime}
+              alt=""
+              className="absolute select-none object-contain"
+              style={{
+                left: '20px',
+                top: '299px',
+                width: '342px',
+                height: '342px',
+                zIndex: 2,
+              }}
+            />
+
+            {/* 5. Top-Right: shapeConeLime (Lime cone/pyramid pointing up, w=189, h=189, left=1078, top=0) */}
+            <img
+              src={shapeConeLime}
+              alt=""
+              className="absolute select-none object-contain"
+              style={{
+                left: '1078px',
+                top: '0px',
+                width: '189px',
+                height: '189px',
+                zIndex: 2,
+              }}
+            />
+
+            {/* 6. Mid-Right: shapeCylinder (White cylinder, w=370, h=370, left=1226, top=6) */}
+            <img
+              src={shapeCylinder}
+              alt=""
+              className="absolute select-none object-contain"
+              style={{
+                left: '1226px',
+                top: '6px',
+                width: '370px',
+                height: '370px',
+                zIndex: 2,
+              }}
+            />
+
+            {/* 7. Bottom-Right: shapeSpring2Lime (Lime spring pointing right/down, w=332, h=332, left=1107, top=289) */}
+            <img
+              src={shapeSpring2Lime}
+              alt=""
+              className="absolute select-none object-contain"
+              style={{
+                left: '1107px',
+                top: '289px',
+                width: '332px',
+                height: '332px',
+                zIndex: 2,
+              }}
+            />
           </div>
-        </Container>
+
+          {/* Central Content Column */}
+          <div
+            className="relative lg:absolute left-0 right-0 mx-auto text-center flex flex-col items-center px-4 sm:px-6 pointer-events-auto"
+            style={{
+              top: '83px',
+              maxWidth: '964px',
+              zIndex: 5,
+            }}
+          >
+            {/* Heading: Exact 2 lines from Figma */}
+            <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold text-white tracking-[-0.01em] leading-[1.2]">
+              Unlock Your Potential as a <br className="hidden sm:inline" />Creator with ByteSpace
+            </h2>
+
+            {/* Subtitle - Exact Figma properties: Body L, Satoshi/Poppins, 18px, 160% line-height, #F5F5F6, 964px width */}
+            <p className="text-[#F5F5F6] text-base sm:text-[18px] leading-[160%] max-w-[964px] font-normal mt-5">
+              Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.
+            </p>
+
+            {/* Join as Creator Button - Exact Figma properties: 172x46px, rounded-full, #CBFC01, text #1D1E20 */}
+            <div className="mt-8">
+              <Link
+                to="/register"
+                className="h-[46px] w-[172px] bg-[#CBFC01] hover:bg-[#b8e400] text-[#1D1E20] font-semibold text-[16px] rounded-full transition-all active:scale-95 shadow-md flex items-center justify-center cursor-pointer"
+              >
+                Join as Creator
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* 
@@ -895,55 +1036,64 @@ export default function Home() {
         7. TESTIMONIALS SECTION ("Discover What Our Community Is Saying")
         ========================================================================
       */}
-      <section className="relative w-full py-24 bg-white overflow-hidden">
-        {/* Soft radial background glow (lime/blue) on the right side */}
-        <div className="absolute right-[-100px] top-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-gradient-to-bl from-[#CBFC01]/30 via-[#003BE2]/20 to-transparent blur-[120px] pointer-events-none -z-10" />
-
-        <Container className="space-y-16 relative z-10">
-          {/* Header Row: Left Heading (44px) + Right Description (18px) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div className="lg:col-span-5">
-              <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
-                Discover What Our Community Is Saying
+      <section
+        className="relative w-full py-24 lg:py-28 overflow-hidden"
+        style={{
+          background: `
+            radial-gradient(ellipse 750px 750px at 98% 30%, rgba(203, 252, 1, 0.42) 0%, rgba(203, 252, 1, 0) 70%),
+            radial-gradient(ellipse 550px 550px at 0% 15%, rgba(203, 252, 1, 0.18) 0%, rgba(203, 252, 1, 0) 70%),
+            radial-gradient(ellipse 500px 500px at 2% 85%, rgba(0, 59, 226, 0.08) 0%, rgba(0, 59, 226, 0) 70%),
+            #FFFFFF
+          `,
+        }}
+      >
+        <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-5 space-y-14 sm:space-y-16 relative z-10">
+          {/* Header Row: Left Heading (46px) + Right Description (18px) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            <div className="lg:col-span-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-bold text-[#1D1E20] tracking-[-0.02em] leading-[1.18]">
+                Discover What Our <br className="hidden sm:inline" />Community Is Saying
               </h2>
             </div>
-            <div className="lg:col-span-7">
-              <p className="text-[#4B4C53] text-base sm:text-lg leading-[1.6]">
+            <div className="lg:col-span-6">
+              <p className="text-[#4B4C53] text-base sm:text-[18px] leading-[1.65] font-normal">
                 At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.
               </p>
             </div>
           </div>
 
-          {/* 3 Testimonial Cards (Normal upright font, no italic) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* 3 Testimonial Cards (Exact Figma 1:1 Layout: Avatar on top, Name, Blue Role, Quote, 32px rounded, 374px width) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7 sm:gap-8 lg:gap-10">
             {testimonials.map((t) => (
               <div
                 key={t.name}
-                className="bg-white rounded-[24px] p-8 border border-[#E5E6E8] shadow-card flex flex-col justify-between hover:shadow-card-hover transition-all duration-300"
+                className="bg-white rounded-[32px] p-7 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-[#F0F1F3] hover:shadow-[0_16px_36px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-start h-full"
               >
-                <div>
-                  {/* User Profile */}
-                  <div className="flex items-center gap-4 mb-6">
-                    <img
-                      src={t.avatar}
-                      alt={t.name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-[#E5E6E8]"
-                    />
-                    <div>
-                      <h4 className="text-[20px] font-semibold text-[#242528]">{t.name}</h4>
-                      <p className="text-sm text-[#82868E] font-normal">{t.role}</p>
-                    </div>
-                  </div>
+                {/* Large Avatar on its own row */}
+                <img
+                  src={t.avatar}
+                  alt={t.name}
+                  className="w-20 h-20 rounded-full object-cover mb-6 shadow-xs"
+                />
 
-                  {/* Quote: Clean upright font, no italic */}
-                  <p className="text-base text-[#4B4C53] leading-relaxed font-normal">
-                    {t.quote}
-                  </p>
-                </div>
+                {/* Name */}
+                <h4 className="text-[22px] font-bold text-[#1D1E20] leading-tight">
+                  {t.name}
+                </h4>
+
+                {/* Role in Primary Blue */}
+                <span className="text-[16px] font-medium text-[#003BE2] mt-1 mb-5 block">
+                  {t.role}
+                </span>
+
+                {/* Quote: Clean upright font, no italic */}
+                <p className="text-[15px] sm:text-[16px] text-[#4B4C53] leading-[1.65] font-normal">
+                  {t.quote}
+                </p>
               </div>
             ))}
           </div>
-        </Container>
+        </div>
       </section>
     </div>
   );
