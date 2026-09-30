@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth, mapAuthError } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
+import { mapAuthError } from '../context/AuthContext';
 import {
   course2,
   course3,

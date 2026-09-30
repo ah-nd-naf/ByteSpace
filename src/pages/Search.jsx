@@ -1,14 +1,8 @@
 import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import CourseCard from '../components/CourseCard';
-import {
-  course1,
-  course2,
-  course3,
-  course4,
-  course5,
-  course6,
-} from '../assets/images';
+import { searchBaseCourses as baseCourses } from '../data/courses';
+import { searchCategoryPills as categoryPills } from '../data/categories';
 
 export default function Search() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -26,107 +20,6 @@ export default function Search() {
   const [levelDropdownOpen, setLevelDropdownOpen] = useState(false);
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [sortDropdownOpen, setSortDropdownOpen] = useState(false);
-
-  // 9 category pills matching exact Figma Prototype
-  const categoryPills = [
-    'Featured',
-    'Music',
-    'Drawing & Painting',
-    'Marketing',
-    'Animation',
-    'Social Media',
-    'UI/UX Design',
-    'Creative Marketing',
-    'Cooking',
-  ];
-
-  // Base curated courses from Figma (Row 1: Learn Figma, Build Digital, the Power; Row 2: Balancing, Mastering, From Idea)
-  const baseCourses = [
-    {
-      id: 1,
-      title: 'Learn Figma from Basic',
-      thumbnail: course1,
-      author: 'by purepearl studio',
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      studentBadge: '26+',
-      price: '$25/lifetime',
-      category: 'UI/UX Design',
-    },
-    {
-      id: 2,
-      title: 'Build Digital Asset',
-      thumbnail: course2,
-      author: 'by purepearl studio',
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      studentBadge: '26+',
-      price: '$25/lifetime',
-      category: 'Creative Marketing',
-    },
-    {
-      id: 3,
-      title: 'the Power of Big Data',
-      thumbnail: course3,
-      author: 'by purepearl studio',
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      studentBadge: '26+',
-      price: '$25/lifetime',
-      category: 'Marketing',
-    },
-    {
-      id: 4,
-      title: 'Balancing Productivity and Self-Care',
-      thumbnail: course4,
-      author: 'by purepearl studio',
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      studentBadge: '26+',
-      price: '$25/lifetime',
-      category: 'Productivity',
-    },
-    {
-      id: 5,
-      title: 'Mastering Money Management',
-      thumbnail: course5,
-      author: 'by purepearl studio',
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      studentBadge: '26+',
-      price: '$25/lifetime',
-      category: 'Finance',
-    },
-    {
-      id: 6,
-      title: 'From Idea to Startup Success',
-      thumbnail: course6,
-      author: 'by purepearl studio',
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      studentBadge: '26+',
-      price: '$25/lifetime',
-      category: 'Business',
-    },
-  ];
 
   // Full catalog: 18 cards per page x 5 pages = 90 cards matching exact Figma 18-card page layout
   const fullCatalog = useMemo(() => {

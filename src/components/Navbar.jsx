@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from './Logo';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
+import { navLinks } from '../data/navigation';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,12 +10,6 @@ export default function Navbar() {
 
   const displayName = user?.displayName || user?.email?.split('@')[0] || 'User';
   const initial = displayName.charAt(0).toUpperCase();
-
-  const navLinks = [
-    { label: 'Home', to: '/' },
-    { label: 'Courses', to: '/search' },
-    { label: 'Creators', to: '/creator/1' },
-  ];
 
   return (
     <header className="w-full bg-hero-grid relative z-50">

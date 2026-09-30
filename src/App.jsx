@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import RootLayout from './layouts/RootLayout';
 import Home from './pages/Home';
@@ -8,6 +8,11 @@ import Search from './pages/Search';
 import CourseDetails from './pages/CourseDetails';
 import CreatorProfile from './pages/CreatorProfile';
 import NotFound from './pages/NotFound';
+
+function CreatorRedirect() {
+  const { id } = useParams();
+  return <Navigate to={`/creators/${id || '1'}`} replace />;
+}
 
 export default function App() {
   return (
@@ -39,10 +44,11 @@ export default function App() {
             <Route path="/courses/:id/lessons" element={<CourseDetails />} />
             <Route path="/courses/:id/reviews" element={<CourseDetails />} />
 
-            {/* Creator Profile (Frame 8) */}
-            <Route path="/creator/:id" element={<CreatorProfile />} />
-            <Route path="/creators" element={<CreatorProfile />} />
+            {/* Creator Profile (Frame 8) - Standardized on /creators/:id */}
             <Route path="/creators/:id" element={<CreatorProfile />} />
+            <Route path="/creators" element={<Navigate to="/creators/1" replace />} />
+            <Route path="/creator/:id" element={<CreatorRedirect />} />
+            <Route path="/creator" element={<Navigate to="/creators/1" replace />} />
 
             {/* 404 Not Found Page Shell (Frame 9: 1440x1485, includes Navbar & Footer) */}
             <Route path="*" element={<NotFound />} />

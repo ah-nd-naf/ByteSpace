@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
+import { browseLinks, categoryLinks, platformLinks } from '../data/navigation';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -14,30 +15,6 @@ export default function Footer() {
       setTimeout(() => setSubscribed(false), 4000);
     }
   };
-
-  const browseLinks = [
-    { label: 'Featured Courses', to: '/search' },
-    { label: 'Featured Categories', to: '/search' },
-    { label: 'Business', to: '/search?category=business' },
-    { label: 'IT', to: '/search?category=it' },
-    { label: 'Design', to: '/search?category=design' },
-  ];
-
-  const categoryLinks = [
-    { label: 'Development', to: '/search?category=development' },
-    { label: 'Marketing', to: '/search?category=marketing' },
-    { label: 'Photography', to: '/search?category=photography' },
-    { label: 'Finance', to: '/search?category=finance' },
-    { label: 'Sport', to: '/search?category=sport' },
-  ];
-
-  const platformLinks = [
-    { label: 'Become a Creator', to: '/register' },
-    { label: 'Affiliate Program', to: '/search' },
-    { label: 'Contact', to: '/' },
-    { label: 'Help', to: '/' },
-    { label: 'About', to: '/' },
-  ];
 
   return (
     <footer className="w-full bg-white border-t border-[#E5E6E8] text-[#242528] pt-16 pb-12 font-satoshi">

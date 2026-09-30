@@ -3,16 +3,14 @@ import { useParams, Link, useSearchParams } from 'react-router-dom';
 import {
   courseDetailHeroWoman,
   courseDetailAuthorMan,
-  courseDetailGallery1,
-  courseDetailGallery2,
-  courseDetailGallery3,
-  courseDetailGallery4,
-  avatar06,
-  avatar11,
-  avatar13,
-  avatar14,
 } from '../assets/images';
 import privateConsultationIcon from '../assets/icon-private-consultation.png';
+import {
+  sneakPeakImages,
+  courseKeyPoints as keyPoints,
+  lessonModules,
+} from '../data/lessons';
+import { studentReviews } from '../data/reviews';
 
 // Exact standard 5-point vector star matching Figma prototype icon system
 function FigmaStarIcon({ className = 'w-4 h-4 fill-current' }) {
@@ -97,104 +95,6 @@ export default function CourseDetails() {
     setTimeout(() => setCopied(false), 2500);
   };
 
-  // Gallery items for "Sneak Peak" strictly matching Figma Screenshot 3 order
-  const sneakPeakImages = [
-    { src: courseDetailGallery4, alt: 'Wireframing & sketching digital products on paper' },
-    { src: courseDetailGallery2, alt: 'Designing modern desktop interfaces on laptop' },
-    { src: courseDetailGallery3, alt: 'Design system workspace setup on iMac' },
-    { src: courseDetailGallery1, alt: 'Mobile app layout and prototyping on phones' },
-  ];
-
-  // 8 Key Points strictly matching Figma Frame 5
-  const keyPoints = [
-    'Foundational Concepts',
-    'Design Principles Mastery',
-    'Advanced Techniques in Digital Creation',
-    'Project Showcase and Critique',
-    'Optimizing for Various Platforms',
-    'Digital Asset Management Best Practices',
-    'Monetization Strategies',
-    'Capstone Project: Building Your Portfolio',
-  ];
-
-  // Modules for "Lessons" tab strictly matching Figma Frame 6 & screenshots
-  const lessonModules = [
-    {
-      id: 'm1',
-      title: 'Module 1: Introduction to Digital Assets',
-      desc: "Lay the groundwork with lessons like 'Understanding Digital Elements' and 'Navigating Design Software Tools.' Dive into the essentials of digital asset creation.",
-    },
-    {
-      id: 'm2',
-      title: 'Module 2: Design Principles for Impact',
-      desc: "Master the principles that drive impactful designs with lessons such as 'Color Theory in Digital Design' and 'Typography Essentials.' Elevate your visual communication skills.",
-    },
-    {
-      id: 'm4',
-      title: 'Module 4: User-Centric Design Strategies',
-      desc: "Understand 'Design Thinking in Digital Creation' and delve into 'User Experience (UX) Essentials.' Craft digital assets with a focus on user-centric design.",
-    },
-    {
-      id: 'm5',
-      title: 'Module 5: Interactive Media and Engagement',
-      desc: "Engage your audience with lessons like 'Creating Interactive Presentations' and 'Integrating Multimedia Elements.' Master the art of creating immersive digital experiences.",
-    },
-    {
-      id: 'm6',
-      title: 'Module 6: Project Showcase and Critique',
-      desc: "Perfect your presentation skills with 'Effective Presentation Techniques' and embrace collaboration with 'Peer Critique and Collaboration.' Showcase your work with confidence.",
-    },
-    {
-      id: 'm7',
-      title: 'Module 7: Optimizing Digital Assets for Various Platforms',
-      desc: "Adapt your digital creations for 'Mobile Platforms' and optimize for 'Social Media.' Ensure widespread accessibility and engagement across diverse digital landscapes.",
-    },
-  ];
-
-  // Reviews strictly matching Figma Frame 7
-  const studentReviews = [
-    {
-      author: 'PurePearl Studio',
-      role: 'UI/UX Designer',
-      time: 'a year ago',
-      rating: 5,
-      avatar: avatar14,
-      hasQuotes: true,
-      content:
-        'The course provided me with a comprehensive understanding of digital asset creation. The lessons were in-depth, practical, and immediately applicable to my work. Highly recommended!',
-    },
-    {
-      author: 'Albert Flores',
-      role: 'UI/UX Designer',
-      time: 'a year ago',
-      rating: 5,
-      avatar: avatar13,
-      hasQuotes: false,
-      content:
-        "This course transformed my approach to digital design. The combination of theory, hands-on exercises, and real-world applications made it a truly enriching experience. Excited to implement what I've learned!",
-    },
-    {
-      author: 'Cody Fisher',
-      role: 'UI/UX Designer',
-      time: 'a year ago',
-      rating: 5,
-      avatar: avatar11,
-      hasQuotes: false,
-      content:
-        'The project showcase and critique module created a collaborative environment where I could showcase my work, receive valuable feedback, and refine my skills. It added a unique and valuable dimension to the learning process.',
-    },
-    {
-      author: 'Brooklyn Simmons',
-      role: 'UI/UX Designer',
-      time: 'a year ago',
-      rating: 5,
-      avatar: avatar06,
-      hasQuotes: false,
-      content:
-        'The lessons on optimizing digital assets for various platforms were particularly insightful. The course adapts to the evolving digital landscape, and the engaging content kept me motivated throughout.',
-    },
-  ];
-
   return (
     <div ref={pageContainerRef} className="course-details-page w-full bg-white relative">
       {/* 
@@ -220,7 +120,7 @@ export default function CourseDetails() {
               <p className="font-satoshi text-white/80 text-sm sm:text-base mt-3 font-normal leading-[1.6]">
                 by{' '}
                 <Link
-                  to="/creator/1"
+                  to="/creators/1"
                   className="text-white hover:underline font-normal cursor-pointer"
                 >
                   purepearl studio
@@ -853,7 +753,7 @@ export default function CourseDetails() {
                 </p>
 
                 <Link
-                  to="/creator/1"
+                  to="/creators/1"
                   className="inline-block px-7 py-2.5 rounded-full border border-[#CED0D3] text-[#242528] font-satoshi text-sm font-medium hover:border-[#242528] hover:bg-[#F9FAFB] transition-all cursor-pointer"
                 >
                   See Full Profile

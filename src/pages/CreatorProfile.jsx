@@ -1,15 +1,8 @@
 import { useState, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import CourseCard from '../components/CourseCard';
-import {
-  avatar03,
-  course1,
-  course2,
-  course3,
-  course4,
-  course5,
-  course6,
-} from '../assets/images';
+import { creatorCourses } from '../data/courses';
+import { creatorProfile } from '../data/creators';
 
 export default function CreatorProfile() {
   useParams();
@@ -20,94 +13,6 @@ export default function CreatorProfile() {
   const [levelDropdownOpen, setLevelDropdownOpen] = useState(false);
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [sortDropdownOpen, setSortDropdownOpen] = useState(false);
-
-  // 6 Creator Courses strictly matching Figma Screenshot 2, 3 & 4
-  const creatorCourses = [
-    {
-      id: 1,
-      title: 'Learn Figma from Basic',
-      thumbnail: course1,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      category: 'Design',
-      studentBadge: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-    },
-    {
-      id: 2,
-      title: 'Build Digital Asset',
-      thumbnail: course2,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      category: 'Design',
-      studentBadge: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-    },
-    {
-      id: 3,
-      title: 'the Power of Big Data',
-      thumbnail: course3,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      category: 'Development',
-      studentBadge: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-    },
-    {
-      id: 4,
-      title: 'Balancing Productivity and Life',
-      thumbnail: course4,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      category: 'Business',
-      studentBadge: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-    },
-    {
-      id: 5,
-      title: 'Mastering Money Management',
-      thumbnail: course5,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      category: 'Finance',
-      studentBadge: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-    },
-    {
-      id: 6,
-      title: 'From Idea to Startup Success',
-      thumbnail: course6,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      category: 'Marketing',
-      studentBadge: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-    },
-  ];
 
   // Filter and sort courses
   const filteredCourses = useMemo(() => {
@@ -124,7 +29,7 @@ export default function CreatorProfile() {
       result.sort((a, b) => a.title.localeCompare(b.title));
     }
     return result;
-  }, [selectedLevel, selectedCategory, sortOption, creatorCourses]);
+  }, [selectedLevel, selectedCategory, sortOption]);
 
   const sortLabel = {
     relevant: 'Most relevant',
@@ -146,34 +51,31 @@ export default function CreatorProfile() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6">
             <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-[24px] sm:rounded-[28px] overflow-hidden shrink-0 border border-white/20 shadow-md">
               <img
-                src={avatar03}
-                alt="PurePearl Studio"
+                src={creatorProfile.avatar}
+                alt={creatorProfile.name}
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <div className="flex flex-wrap items-center gap-3">
                 <h1 className="font-poppins font-semibold text-2xl sm:text-3xl lg:text-[36px] text-white tracking-[-0.01em] leading-[1.2]">
-                  PurePearl Studio
+                  {creatorProfile.name}
                 </h1>
                 <span className="bg-[#CBFC01] text-[#1D1E20] font-satoshi font-semibold text-xs sm:text-sm px-4 py-1 rounded-full shadow-xs">
-                  Creator
+                  {creatorProfile.badge}
                 </span>
               </div>
               <p className="font-satoshi text-white/90 text-sm sm:text-base font-normal mt-1.5 leading-[1.6]">
-                Passionate UI/UX, Web designer
+                {creatorProfile.role}
               </p>
             </div>
           </div>
 
           {/* Bio Description (Exact Text from Figma Screenshot 1) */}
           <div className="font-satoshi text-white/85 text-sm sm:text-base leading-[1.6] max-w-4xl mt-7 space-y-3 font-normal">
-            <p>
-              Welcome to the creative world of PurePearl Studio. Here, you&apos;ll discover the passion, expertise, and inspiration that drive my creative journey. Let&apos;s explore and learn together!
-            </p>
-            <p>
-              Dive into my creative portfolio, showcasing a glimpse of my artistic endeavors. From digital designs to multimedia projects, each piece tells a unique story. Explore the world of creativity with me.
-            </p>
+            {creatorProfile.bio.map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
           </div>
 
           {/* Badges & Follow Button Row */}
@@ -181,12 +83,12 @@ export default function CreatorProfile() {
             {/* Stats Badges: 3 Products | 12 Followers */}
             <div className="flex items-center gap-3">
               <div className="px-5 py-2.5 rounded-full bg-white text-[#1D1E20] font-satoshi text-sm font-medium shadow-sm flex items-center">
-                <span className="text-[#003BE2] font-poppins font-semibold mr-1.5 text-base">3</span>
+                <span className="text-[#003BE2] font-poppins font-semibold mr-1.5 text-base">{creatorProfile.stats.products}</span>
                 <span>Products</span>
               </div>
               <div className="px-5 py-2.5 rounded-full bg-white text-[#1D1E20] font-satoshi text-sm font-medium shadow-sm flex items-center">
                 <span className="text-[#003BE2] font-poppins font-semibold mr-1.5 text-base">
-                  {isFollowing ? 13 : 12}
+                  {isFollowing ? creatorProfile.stats.followers + 1 : creatorProfile.stats.followers}
                 </span>
                 <span>Followers</span>
               </div>

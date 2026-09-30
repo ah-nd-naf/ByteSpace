@@ -4,11 +4,6 @@ import PartnerLogos from '../components/PartnerLogos';
 import CourseCard from '../components/CourseCard';
 import {
   course1,
-  course2,
-  course3,
-  course4,
-  course5,
-  course6,
   avatar01,
   avatar02,
   avatar03,
@@ -20,7 +15,6 @@ import {
   avatar09,
   avatar10,
   avatar11,
-  avatar12,
   cutoutHeroManLaptop,
   cutoutWomanTablet,
   shapeCylinderLime,
@@ -34,13 +28,10 @@ import {
   shapeCone,
   shapeCylinder,
   shapeTorusLime,
-  learningPathDesign,
-  learningPathDevelopment,
-  learningPathItSoftware,
-  learningPathBusiness,
-  learningPathMarketing,
-  learningPathPhotography,
 } from '../assets/images';
+import { homeCourses as courses } from '../data/courses';
+import { learningPaths, homeCategoryRows } from '../data/categories';
+import { testimonials } from '../data/testimonials';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -55,172 +46,6 @@ export default function Home() {
       navigate('/search');
     }
   };
-
-  // 6 Curated Course Cards matching exact Figma prototype content
-  // Note: Cards 3 and 5 have lime #CBFC01 Enroll Now buttons as confirmed in Figma
-  const courses = [
-    {
-      id: 1,
-      title: 'Learn Figma from Basic',
-      thumbnail: course1,
-      author: 'by purepearl studio',
-      authorAvatar: avatar03,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      age: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-      category: 'Design',
-      highlightEnroll: false,
-    },
-    {
-      id: 2,
-      title: 'Build Digital Asset',
-      thumbnail: course2,
-      author: 'by purepearl studio',
-      authorAvatar: avatar03,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      age: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-      category: 'Development',
-      highlightEnroll: false,
-    },
-    {
-      id: 3,
-      title: 'the Power of Big Data',
-      thumbnail: course3,
-      author: 'by purepearl studio',
-      authorAvatar: avatar03,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      age: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-      category: 'Data Science',
-      highlightEnroll: true,
-    },
-    {
-      id: 4,
-      title: 'Balancing Productivity and Self-Care',
-      thumbnail: course4,
-      author: 'by purepearl studio',
-      authorAvatar: avatar03,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      age: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-      category: 'Productivity',
-      highlightEnroll: false,
-    },
-    {
-      id: 5,
-      title: 'Mastering Money Management',
-      thumbnail: course5,
-      author: 'by purepearl studio',
-      authorAvatar: avatar03,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      age: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-      category: 'Finance',
-      highlightEnroll: true,
-    },
-    {
-      id: 6,
-      title: 'From Idea to Startup Success',
-      thumbnail: course6,
-      author: 'by purepearl studio',
-      authorAvatar: avatar03,
-      lessons: '17 Lessons',
-      duration: '2 hours 16 mins',
-      comments: '59 Comments',
-      rating: '4.5',
-      level: 'Beginner',
-      age: '26+',
-      price: '$25',
-      pricePeriod: '/lifetime',
-      category: 'Business',
-      highlightEnroll: false,
-    },
-  ];
-
-  // Category paths with lime circle icons (Exact Figma Prototype Assets)
-  const learningPaths = [
-    {
-      name: 'Design',
-      slug: 'design',
-      icon: learningPathDesign,
-    },
-    {
-      name: 'Development',
-      slug: 'development',
-      icon: learningPathDevelopment,
-    },
-    {
-      name: 'IT & Software',
-      slug: 'it',
-      icon: learningPathItSoftware,
-    },
-    {
-      name: 'Business',
-      slug: 'business',
-      icon: learningPathBusiness,
-    },
-    {
-      name: 'Marketing',
-      slug: 'marketing',
-      icon: learningPathMarketing,
-    },
-    {
-      name: 'Photography',
-      slug: 'photography',
-      icon: learningPathPhotography,
-    },
-  ];
-
-  // Testimonials
-  const testimonials = [
-    {
-      name: 'Sarah M.',
-      role: 'Enthusiastic Learner',
-      avatar: avatar02,
-      quote:
-        '"ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."',
-    },
-    {
-      name: 'James L.',
-      role: 'Lifelong Learner',
-      avatar: avatar11,
-      quote:
-        '"I\'ve tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."',
-    },
-    {
-      name: 'Alex B.',
-      role: 'Inspired Creator',
-      avatar: avatar12,
-      quote:
-        '"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It\'s fulfilling to see my courses making a positive impact on learners globally."',
-    },
-  ];
 
   return (
     <div className="w-full font-satoshi overflow-x-hidden">
@@ -515,7 +340,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-2.5 sm:gap-3 max-w-[1200px] mx-auto pt-2 w-full overflow-x-auto no-scrollbar">
             {/* Row 1 - 8 Pills */}
             <div className="flex items-center justify-center gap-2 sm:gap-2.5 whitespace-nowrap">
-              {['Featured', 'Music', 'Drawing & Painting', 'Marketing', 'Animation', 'Social Media', 'UI/UX Design', 'Creative Marketing'].map((pill) => (
+              {homeCategoryRows.row1.map((pill) => (
                 <button
                   key={pill}
                   type="button"
@@ -533,7 +358,7 @@ export default function Home() {
 
             {/* Row 2 - 6 Pills */}
             <div className="flex items-center justify-center gap-2 sm:gap-2.5 whitespace-nowrap">
-              {['Digital Illustration', 'Film & Video', 'Crafts', 'Freelance & Entrepreneurship', 'Graphic Design', 'Photography'].map((pill) => (
+              {homeCategoryRows.row2.map((pill) => (
                 <button
                   key={pill}
                   type="button"
@@ -551,7 +376,7 @@ export default function Home() {
 
             {/* Row 3 - 4 Pills + "+ More" */}
             <div className="flex items-center justify-center gap-2 sm:gap-2.5 whitespace-nowrap">
-              {['Productivity', 'Web Development', 'Data Science', 'Cooking'].map((pill) => (
+              {homeCategoryRows.row3.map((pill) => (
                 <button
                   key={pill}
                   type="button"
