@@ -24,7 +24,7 @@ function FigmaStarIcon({ className = 'w-4 h-4 fill-current' }) {
 }
 
 export default function CourseDetails() {
-  const { id = '1' } = useParams();
+  useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const currentTabParam = searchParams.get('tab') || 'about';
   const [activeTab, setActiveTab] = useState(currentTabParam);
@@ -40,10 +40,11 @@ export default function CourseDetails() {
 
   // Sync tab with URL search parameter if changed externally
   useEffect(() => {
-    if (searchParams.get('tab')) {
-      setActiveTab(searchParams.get('tab'));
+    const tab = searchParams.get('tab');
+    if (tab && tab !== activeTab) {
+      setActiveTab(tab);
     }
-  }, [searchParams]);
+  }, [searchParams, activeTab]);
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);

@@ -18,10 +18,6 @@ dist-ssr
 .env.*.local
 *.local
 
-# Design source files and raw asset extractions (large files)
-design/prototype.pdf
-design/assets/
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

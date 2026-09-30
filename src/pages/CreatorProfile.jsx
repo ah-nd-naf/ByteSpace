@@ -12,7 +12,7 @@ import {
 } from '../assets/images';
 
 export default function CreatorProfile() {
-  const { id = '1' } = useParams();
+  useParams();
   const [isFollowing, setIsFollowing] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState('all');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -124,7 +124,7 @@ export default function CreatorProfile() {
       result.sort((a, b) => a.title.localeCompare(b.title));
     }
     return result;
-  }, [selectedLevel, selectedCategory, sortOption]);
+  }, [selectedLevel, selectedCategory, sortOption, creatorCourses]);
 
   const sortLabel = {
     relevant: 'Most relevant',

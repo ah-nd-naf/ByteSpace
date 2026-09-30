@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Container from '../components/Container';
 import PartnerLogos from '../components/PartnerLogos';
 import CourseCard from '../components/CourseCard';
 import {
@@ -32,12 +31,9 @@ import {
   shapeTorusWhite,
   shapePyramidBrightWhite,
   shapeConeLime,
-  shapePyramidWhite,
   shapeCone,
   shapeCylinder,
   shapeTorusLime,
-  shapeTorusBlue,
-  shapeSpring1Blue,
   learningPathDesign,
   learningPathDevelopment,
   learningPathItSoftware,
@@ -165,29 +161,6 @@ export default function Home() {
       category: 'Business',
       highlightEnroll: false,
     },
-  ];
-
-  // Category filter pills extracted from PDF
-  const categoryPills = [
-    'Featured',
-    'Music',
-    'Drawing & Painting',
-    'Marketing',
-    'Animation',
-    'Social Media',
-    'UI/UX Design',
-    'Creative Marketing',
-    'Digital Illustration',
-    'Film & Video',
-    'Crafts',
-    'Freelance & Entrepreneurship',
-    'Graphic Design',
-    'Photography',
-    'Productivity',
-    'Web Development',
-    'Data Science',
-    'Cooking',
-    '+ More',
   ];
 
   // Category paths with lime circle icons (Exact Figma Prototype Assets)

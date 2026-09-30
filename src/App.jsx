@@ -8,7 +8,6 @@ import Search from './pages/Search';
 import CourseDetails from './pages/CourseDetails';
 import CreatorProfile from './pages/CreatorProfile';
 import NotFound from './pages/NotFound';
-import DevTokens from './pages/DevTokens';
 
 export default function App() {
   return (
@@ -24,12 +23,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
 
           {/* 
-            2. Dev Tokens Route (Design System Viewer)
-          */}
-          <Route path="/dev-tokens" element={<DevTokens />} />
-
-          {/* 
-            3. Main Application Routes (With RootLayout: Navbar + Content + Footer)
+            2. Main Application Routes (With RootLayout: Navbar + Content + Footer)
             Matches Figma frames 1, 4, 5, 6, 7, 8, 9
           */}
           <Route element={<RootLayout />}>

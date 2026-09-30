@@ -52,13 +52,8 @@ import shapeSpring2White from './shape-spring-2-white.png';
 // Base Neutral 3D Shapes
 import shapeCone from './shape-cone.png';
 import shapeCylinder from './shape-cylinder.png';
-import shapeTorus from './shape-torus.png';
-import shapeSpring1 from './shape-spring-1.png';
-import shapePyramid from './shape-pyramid.png';
-import shapeSpring2 from './shape-spring-2.png';
 
 // Vector Logos (Figma SVGs)
-import logoBytespace from './logo-bytespace.svg';
 import logoPartners from './logo-partners.svg';
 
 // Learning Path Icons (Exact Figma Prototype Assets)
@@ -133,13 +128,8 @@ export {
   // Base 3D Shapes
   shapeCone,
   shapeCylinder,
-  shapeTorus,
-  shapeSpring1,
-  shapePyramid,
-  shapeSpring2,
 
   // Logos
-  logoBytespace,
   logoPartners,
 };
 
@@ -188,13 +178,8 @@ const images = {
   shapes: {
     cone: shapeCone,
     cylinder: shapeCylinder,
-    torus: shapeTorus,
-    spring1: shapeSpring1,
-    pyramid: shapePyramid,
-    spring2: shapeSpring2,
   },
   logos: {
-    bytespace: logoBytespace,
     partners: logoPartners,
   },
 };

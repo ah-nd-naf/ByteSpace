@@ -461,7 +461,7 @@ export default function Search() {
           </div>
 
           {/* Category Pills Row */}
-          <div className="mt-8 flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
+          <div className="mt-8 flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-none">
             {categoryPills.map((pill) => (
               <button
                 key={pill}
@@ -470,7 +470,7 @@ export default function Search() {
                   setSelectedCategory(pill);
                   setCurrentPage(1);
                 }}
-                className={`h-[43px] px-6 rounded-full text-[15px] transition-all cursor-pointer whitespace-nowrap shrink-0 flex items-center justify-center ${
+                className={`h-[43px] px-4.5 rounded-full text-[15px] transition-all cursor-pointer whitespace-nowrap shrink-0 flex items-center justify-center ${
                   selectedCategory === pill
                     ? 'bg-[#CBFC01] text-[#242528] font-medium shadow-xs'
                     : 'bg-[#F5F5F6] hover:bg-[#E5E6E8] text-[#4B4C53] font-normal'
