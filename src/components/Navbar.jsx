@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from './Logo';
+import { useAuth } from '../context/AuthContext';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { user, logout } = useAuth();
+
+  const displayName = user?.displayName || user?.email?.split('@')[0] || 'User';
+  const initial = displayName.charAt(0).toUpperCase();
 
   const navLinks = [
     { label: 'Home', to: '/' },
@@ -55,21 +60,44 @@ export default function Navbar() {
           - "Sign In": 16px Poppins white, link to /login
           - "Join Us": 16px Poppins white, link to /register
           - Shopping Bag Icon: 16px x 20px, ends at x = 1316px..1320px
+          When logged in: replace Sign In / Join Us with user name (or avatar) and Logout button
         */}
         <div className="flex items-center gap-6 sm:gap-7">
-          <Link
-            to="/login"
-            className="text-white hover:opacity-80 text-base font-poppins font-normal transition-opacity"
-          >
-            Sign In
-          </Link>
+          {user ? (
+            <div className="flex items-center gap-5">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-full bg-[#CBFC01] text-[#242528] flex items-center justify-center font-poppins font-semibold text-sm select-none shadow-xs">
+                  {initial}
+                </div>
+                <span className="text-white text-base font-poppins font-normal max-w-[130px] truncate" title={displayName}>
+                  {displayName}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => logout()}
+                className="text-white hover:opacity-80 text-base font-poppins font-normal transition-opacity cursor-pointer"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <>
+              <Link
+                to="/login"
+                className="text-white hover:opacity-80 text-base font-poppins font-normal transition-opacity"
+              >
+                Sign In
+              </Link>
 
-          <Link
-            to="/register"
-            className="text-white hover:opacity-80 text-base font-poppins font-normal transition-opacity"
-          >
-            Join Us
-          </Link>
+              <Link
+                to="/register"
+                className="text-white hover:opacity-80 text-base font-poppins font-normal transition-opacity"
+              >
+                Join Us
+              </Link>
+            </>
+          )}
 
           {/* Cart / Shopping Bag Icon extracted directly from PDF vector paths */}
           <button
@@ -124,22 +152,45 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
-          <div className="pt-3 border-t border-white/10 flex items-center gap-4">
-            <Link
-              to="/login"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-white hover:opacity-80 text-sm font-poppins"
-            >
-              Sign In
-            </Link>
-            <Link
-              to="/register"
-              onClick={() => setMobileMenuOpen(false)}
-              className="bg-[#CBFC01] text-[#242528] px-4 py-1.5 rounded-[12px] text-sm font-poppins font-semibold"
-            >
-              Join Us
-            </Link>
-          </div>
+          {user ? (
+            <div className="pt-3 border-t border-white/10 flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-full bg-[#CBFC01] text-[#242528] flex items-center justify-center font-poppins font-semibold text-sm select-none">
+                  {initial}
+                </div>
+                <span className="text-white text-sm font-poppins font-medium truncate max-w-[180px]">
+                  {displayName}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  logout();
+                  setMobileMenuOpen(false);
+                }}
+                className="text-white hover:opacity-80 text-sm font-poppins cursor-pointer"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <div className="pt-3 border-t border-white/10 flex items-center gap-4">
+              <Link
+                to="/login"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-white hover:opacity-80 text-sm font-poppins"
+              >
+                Sign In
+              </Link>
+              <Link
+                to="/register"
+                onClick={() => setMobileMenuOpen(false)}
+                className="bg-[#CBFC01] text-[#242528] px-4 py-1.5 rounded-[12px] text-sm font-poppins font-semibold"
+              >
+                Join Us
+              </Link>
+            </div>
+          )}
         </div>
       )}
     </header>

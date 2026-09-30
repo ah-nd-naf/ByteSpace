@@ -32,3 +32,6 @@ design/assets/
 *.njsproj
 *.sln
 *.sw?
+
+# Cleanup baseline screenshots
+.cleanup-baseline/

@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth, mapAuthError } from '../context/AuthContext';
 import {
   course2,
   course3,
@@ -16,14 +17,60 @@ import {
 } from '../assets/images';
 
 export default function Register() {
-  const [fullName, setFullName] = useState('Jamie Davis');
-  const [email, setEmail] = useState('designer@example.com');
-  const [password, setPassword] = useState('password123');
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
+  const { user, loading, register } = useAuth();
 
-  const handleSubmit = (e) => {
+  // Redirect away from /register if already logged in
+  useEffect(() => {
+    if (user && !loading) {
+      navigate('/', { replace: true });
+    }
+  }, [user, loading, navigate]);
+
+  const validateForm = () => {
+    if (!fullName.trim()) {
+      setError('Please enter your full name.');
+      return false;
+    }
+    if (!email.trim()) {
+      setError('Please enter your email.');
+      return false;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.trim())) {
+      setError('Please enter a valid email address.');
+      return false;
+    }
+    if (!password) {
+      setError('Please enter your password.');
+      return false;
+    }
+    if (password.length < 6) {
+      setError('Password should be at least 6 characters.');
+      return false;
+    }
+    return true;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    navigate('/');
+    setError('');
+    if (!validateForm()) return;
+
+    setIsSubmitting(true);
+    try {
+      await register(fullName.trim(), email.trim(), password);
+      navigate('/');
+    } catch (err) {
+      setError(mapAuthError(err));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -270,6 +317,19 @@ export default function Register() {
 
               {/* Inputs */}
               <form onSubmit={handleSubmit} className="space-y-4">
+                {/* Inline Error Message */}
+                {error && (
+                  <div
+                    role="alert"
+                    className="rounded-[12px] bg-red-50 border border-red-200 text-red-600 px-4 py-2.5 text-sm font-satoshi flex items-start gap-2"
+                  >
+                    <svg className="w-5 h-5 text-red-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                    </svg>
+                    <span className="leading-snug">{error}</span>
+                  </div>
+                )}
+
                 {/* Full Name */}
                 <div>
                   <label className="block font-satoshi font-medium text-[15px] text-[#242528] mb-1.5">
@@ -277,11 +337,14 @@ export default function Register() {
                   </label>
                   <input
                     type="text"
-                    required
                     value={fullName}
-                    onChange={(e) => setFullName(e.target.value)}
+                    disabled={isSubmitting}
+                    onChange={(e) => {
+                      setFullName(e.target.value);
+                      if (error) setError('');
+                    }}
                     placeholder="Jamie Davis"
-                    className="w-[453px] h-[52px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-[15px] font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] transition-all"
+                    className="w-[453px] h-[52px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-[15px] font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] transition-all disabled:opacity-70"
                   />
                 </div>
 
@@ -292,11 +355,14 @@ export default function Register() {
                   </label>
                   <input
                     type="email"
-                    required
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    disabled={isSubmitting}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                      if (error) setError('');
+                    }}
                     placeholder="designer@example.com"
-                    className="w-[453px] h-[52px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-[15px] font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] transition-all"
+                    className="w-[453px] h-[52px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-[15px] font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] transition-all disabled:opacity-70"
                   />
                 </div>
 
@@ -307,11 +373,14 @@ export default function Register() {
                   </label>
                   <input
                     type="password"
-                    required
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    disabled={isSubmitting}
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                      if (error) setError('');
+                    }}
                     placeholder="********"
-                    className="w-[453px] h-[52px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-[15px] font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] transition-all"
+                    className="w-[453px] h-[52px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-[15px] font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] transition-all disabled:opacity-70"
                   />
                 </div>
 
@@ -319,9 +388,10 @@ export default function Register() {
                 <div className="flex justify-end pt-3">
                   <button
                     type="submit"
-                    className="px-9 py-3.5 rounded-full bg-[#CBFC01] hover:bg-[#b8e400] text-[#242528] font-satoshi font-medium text-[18px] leading-[1.2] transition-all duration-200 active:scale-95 shadow-sm cursor-pointer"
+                    disabled={isSubmitting}
+                    className="px-9 py-3.5 rounded-full bg-[#CBFC01] hover:bg-[#b8e400] text-[#242528] font-satoshi font-medium text-[18px] leading-[1.2] transition-all duration-200 active:scale-95 shadow-sm cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Continue
+                    {isSubmitting ? 'Creating Account...' : 'Continue'}
                   </button>
                 </div>
               </form>
@@ -377,17 +447,33 @@ export default function Register() {
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Inline Error Message */}
+            {error && (
+              <div
+                role="alert"
+                className="rounded-[12px] bg-red-50 border border-red-200 text-red-600 px-4 py-2.5 text-sm font-satoshi flex items-start gap-2"
+              >
+                <svg className="w-5 h-5 text-red-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+                <span className="leading-snug">{error}</span>
+              </div>
+            )}
+
             <div>
               <label className="block font-satoshi font-medium text-sm text-[#242528] mb-1.5">
                 Full Name
               </label>
               <input
                 type="text"
-                required
                 value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
+                disabled={isSubmitting}
+                onChange={(e) => {
+                  setFullName(e.target.value);
+                  if (error) setError('');
+                }}
                 placeholder="Jamie Davis"
-                className="w-full h-[50px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-sm font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2]"
+                className="w-full h-[50px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-sm font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] disabled:opacity-70"
               />
             </div>
 
@@ -397,11 +483,14 @@ export default function Register() {
               </label>
               <input
                 type="email"
-                required
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                disabled={isSubmitting}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  if (error) setError('');
+                }}
                 placeholder="designer@example.com"
-                className="w-full h-[50px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-sm font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2]"
+                className="w-full h-[50px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-sm font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] disabled:opacity-70"
               />
             </div>
 
@@ -411,20 +500,24 @@ export default function Register() {
               </label>
               <input
                 type="password"
-                required
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                disabled={isSubmitting}
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                  if (error) setError('');
+                }}
                 placeholder="********"
-                className="w-full h-[50px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-sm font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2]"
+                className="w-full h-[50px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-sm font-satoshi focus:outline-none focus:ring-2 focus:ring-[#003BE2] disabled:opacity-70"
               />
             </div>
 
             <div className="flex justify-end pt-2">
               <button
                 type="submit"
-                className="px-8 py-3 rounded-full bg-[#CBFC01] hover:bg-[#b8e400] text-[#242528] font-satoshi font-medium text-base transition-all duration-200 active:scale-95 shadow-sm cursor-pointer"
+                disabled={isSubmitting}
+                className="px-8 py-3 rounded-full bg-[#CBFC01] hover:bg-[#b8e400] text-[#242528] font-satoshi font-medium text-base transition-all duration-200 active:scale-95 shadow-sm cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Continue
+                {isSubmitting ? 'Creating Account...' : 'Continue'}
               </button>
             </div>
           </form>
