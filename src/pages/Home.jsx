@@ -28,6 +28,7 @@ import {
   shapeSpring1Lime,
   shapeSpring2Lime,
   shapeSpring1White,
+  shapeSpring2White,
   shapeTorusWhite,
   shapePyramidBrightWhite,
   shapeConeLime,
@@ -249,7 +250,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="w-full font-['Poppins'] overflow-x-hidden">
+    <div className="w-full font-satoshi overflow-x-hidden">
       {/* 
         ========================================================================
         1. HERO SECTION (1440 x 1024, .bg-hero-grid on #003BE2, overflow-hidden)
@@ -342,11 +343,11 @@ export default function Home() {
             }}
           />
 
-          {/* 6. Bottom-Right: shapeSpring1White (White wave spring rotated ~-35deg matching Figma) */}
+          {/* 6. Bottom-Right: shapeSpring2White (Large white 3D spring matching Figma) */}
           <img
-            src={shapeSpring1White}
+            src={shapeSpring2White}
             alt=""
-            className="pointer-events-none absolute select-none object-contain -rotate-[35deg]"
+            className="pointer-events-none absolute select-none object-contain"
             style={{
               left: '1124px',
               top: '672px',
@@ -366,14 +367,14 @@ export default function Home() {
               zIndex: 5,
             }}
           >
-            <h1 className="text-[72px] font-semibold text-white tracking-[-0.01em] leading-[1.18]">
+            <h1 className="font-poppins text-[72px] font-semibold text-white tracking-[-0.01em] leading-[1.2]">
               Get Access to Hundreds <br />Courses Available
             </h1>
           </div>
 
           {/* Hero Subtitle - Exact Figma properties: Width 819px, Height 29px, Size 18px, Line-height 160%, Color #E5E6E8 */}
           <p
-            className="absolute text-center left-0 right-0 mx-auto text-[#E5E6E8] text-[18px] font-normal leading-[160%]"
+            className="font-satoshi absolute text-center left-0 right-0 mx-auto text-[#E5E6E8] text-[18px] font-normal leading-[1.6]"
             style={{
               top: '376px',
               width: '819px',
@@ -449,8 +450,8 @@ export default function Home() {
               zIndex: 10,
             }}
           >
-            <h4 className="text-[16px] font-semibold text-[#242528] leading-tight">UI/UX Design</h4>
-            <p className="text-[12px] text-[#82868E] whitespace-nowrap mt-1">200 Courses • 1000+ Students</p>
+            <h4 className="font-poppins text-[16px] font-semibold text-[#242528] leading-tight">UI/UX Design</h4>
+            <p className="font-satoshi text-[12px] text-[#82868E] whitespace-nowrap mt-1">200 Courses • 1000+ Students</p>
           </div>
 
           {/* Floating Card 2: Learning Progress 55% (top 651px, left 842px) */}
@@ -464,8 +465,8 @@ export default function Home() {
               zIndex: 10,
             }}
           >
-            <span className="text-[14px] text-[#4B4C53] font-medium">Learning Progress</span>
-            <span className="text-[48px] font-bold text-[#242528] leading-none tracking-tight">55%</span>
+            <span className="font-satoshi text-[14px] text-[#4B4C53] font-medium">Learning Progress</span>
+            <span className="font-poppins text-[48px] font-semibold text-[#242528] leading-none tracking-tight">55%</span>
             <div className="w-full bg-[#E5E6E8] h-2 rounded-full overflow-hidden">
               <div className="bg-[#CBFC01] h-full w-[55%] rounded-full" />
             </div>
@@ -484,8 +485,8 @@ export default function Home() {
           >
             {/* Header: Title and Rating stacked closely */}
             <div>
-              <h4 className="text-[16px] font-semibold text-[#242528] leading-tight">Happy Students</h4>
-              <div className="flex items-center gap-1.5 mt-1">
+              <h4 className="font-poppins text-[16px] font-semibold text-[#242528] leading-tight">Happy Students</h4>
+              <div className="flex items-center gap-1.5 mt-1 font-satoshi">
                 <span className="text-[12px] font-semibold text-[#242528] leading-none">4.5</span>
                 <span className="text-[12px] text-[#82868E] font-normal leading-none">(240)</span>
                 <svg className="w-3.5 h-3.5 fill-[#CBFC01] text-[#CBFC01] shrink-0" viewBox="0 0 20 20">
@@ -529,10 +530,10 @@ export default function Home() {
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-5 space-y-10">
           {/* Section Header */}
           <div className="text-center max-w-[854px] mx-auto space-y-4">
-            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
+            <h2 className="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
               Discover Your Passion, <br className="hidden sm:inline" />Build Your Skills
             </h2>
-            <p className="text-[#4B4C53] text-base sm:text-lg leading-[1.5] max-w-[750px] mx-auto font-normal">
+            <p className="font-satoshi text-[#4B4C53] text-base sm:text-[18px] leading-[1.6] max-w-[750px] mx-auto font-normal">
               At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.
             </p>
           </div>
@@ -619,10 +620,10 @@ export default function Home() {
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-5 space-y-12 sm:space-y-14">
           {/* Header */}
           <div className="text-center max-w-[854px] mx-auto space-y-4">
-            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
+            <h2 className="font-poppins text-3xl sm:text-4xl lg:text-[36px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
               Explore Diverse Learning Paths at Bytespace
             </h2>
-            <p className="text-[#4B4C53] text-base sm:text-lg leading-[1.6] max-w-[760px] mx-auto font-normal">
+            <p className="font-satoshi text-[#4B4C53] text-base sm:text-[18px] leading-[1.6] max-w-[760px] mx-auto font-normal">
               At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there&apos;s something for everyone. Unleash your potential and explore our carefully curated categories.
             </p>
           </div>
@@ -640,7 +641,7 @@ export default function Home() {
                   alt={item.name}
                   className="w-[60px] h-[60px] object-contain mb-3.5 group-hover:scale-110 transition-transform duration-300"
                 />
-                <h3 className="text-[17px] font-semibold text-[#242528] group-hover:text-[#003BE2] transition-colors text-center leading-tight">
+                <h3 className="font-poppins text-[20px] font-semibold text-[#242528] group-hover:text-[#003BE2] transition-colors text-center leading-tight">
                   {item.name}
                 </h3>
               </Link>
@@ -672,27 +673,27 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-6 space-y-7">
-              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold text-[#1D1E20] tracking-[-0.02em] leading-[1.14]">
+              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
                 Your Path to Professional <br className="hidden sm:inline" />Growth Starts Here!
               </h2>
 
-              <p className="text-[#4B4C53] text-base sm:text-[17px] leading-[1.65] max-w-[500px] font-normal">
+              <p className="font-satoshi text-[#4B4C53] text-base sm:text-[18px] leading-[1.6] max-w-[500px] font-normal">
                 Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
               </p>
 
               {/* Stats Counters (12K Students, 70+ Courses, 16 Creators - Exact Figma Typography & Spacing) */}
-              <div className="flex items-center gap-12 sm:gap-16 lg:gap-20 pt-2">
+              <div className="flex items-center gap-12 sm:gap-16 lg:gap-20 pt-2 font-satoshi">
                 <div>
-                  <span className="block text-[44px] sm:text-[48px] font-bold text-[#003BE2] leading-none">12K</span>
-                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-medium">Students</span>
+                  <span className="font-poppins block text-[36px] sm:text-[44px] font-bold text-[#003BE2] leading-none">12K</span>
+                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-normal">Students</span>
                 </div>
                 <div>
-                  <span className="block text-[44px] sm:text-[48px] font-bold text-[#003BE2] leading-none">70+</span>
-                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-medium">Courses</span>
+                  <span className="font-poppins block text-[36px] sm:text-[44px] font-bold text-[#003BE2] leading-none">70+</span>
+                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-normal">Courses</span>
                 </div>
                 <div>
-                  <span className="block text-[44px] sm:text-[48px] font-bold text-[#003BE2] leading-none">16</span>
-                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-medium">Creators</span>
+                  <span className="font-poppins block text-[36px] sm:text-[44px] font-bold text-[#003BE2] leading-none">16</span>
+                  <span className="text-[18px] text-[#4B4C53] mt-1.5 block font-normal">Creators</span>
                 </div>
               </div>
             </div>
@@ -712,9 +713,9 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-                <div className="space-y-1">
+                <div className="space-y-1 font-satoshi">
                   <div className="flex items-center justify-between gap-1">
-                    <h4 className="text-[14px] sm:text-[15px] font-semibold text-[#1D1E20] line-clamp-1">
+                    <h4 className="font-poppins text-[14px] sm:text-[15px] font-semibold text-[#242528] line-clamp-1">
                       Learn Figma from Basic
                     </h4>
                     <span className="text-[12px] text-[#6C7278] shrink-0">4.5 ★</span>
@@ -851,16 +852,16 @@ export default function Home() {
 
             {/* Right Content Column */}
             <div className="lg:col-span-6 space-y-7">
-              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold text-[#1D1E20] tracking-[-0.02em] leading-[1.14]">
+              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
                 Create & Manage <br className="hidden sm:inline" />Courses Easily.
               </h2>
 
-              <p className="text-[#4B4C53] text-base sm:text-[17px] leading-[1.65] max-w-[500px] font-normal">
-                <strong className="text-[#1D1E20] font-semibold">ByteSpace</strong> supports individuals or entities in the creation, publication, and administration of educational courses.
+              <p className="font-satoshi text-[#4B4C53] text-base sm:text-[18px] leading-[1.6] max-w-[500px] font-normal">
+                <strong className="text-[#242528] font-semibold">ByteSpace</strong> supports individuals or entities in the creation, publication, and administration of educational courses.
               </p>
 
               {/* 4 Checklist Points (Blue circle with white checkmark) */}
-              <div className="space-y-4 pt-2">
+              <div className="space-y-4 pt-2 font-satoshi">
                 {[
                   'Share Your Expertise',
                   'Monetize Your Passion',
@@ -879,7 +880,7 @@ export default function Home() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-[17px] sm:text-[18px] font-medium text-[#1D1E20]">
+                    <span className="text-[18px] font-medium text-[#242528] leading-[1.2]">
                       {point}
                     </span>
                   </div>
@@ -1009,20 +1010,20 @@ export default function Home() {
             }}
           >
             {/* Heading: Exact 2 lines from Figma */}
-            <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold text-white tracking-[-0.01em] leading-[1.2]">
+            <h2 className="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-semibold text-white tracking-[-0.01em] leading-[1.2]">
               Unlock Your Potential as a <br className="hidden sm:inline" />Creator with ByteSpace
             </h2>
 
             {/* Subtitle - Exact Figma properties: Body L, Satoshi/Poppins, 18px, 160% line-height, #F5F5F6, 964px width */}
-            <p className="text-[#F5F5F6] text-base sm:text-[18px] leading-[160%] max-w-[964px] font-normal mt-5">
+            <p className="font-satoshi text-[#F5F5F6] text-base sm:text-[18px] leading-[1.6] max-w-[964px] font-normal mt-5">
               Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.
             </p>
 
             {/* Join as Creator Button - Exact Figma properties: 172x46px, rounded-full, #CBFC01, text #1D1E20 */}
-            <div className="mt-8">
+            <div className="mt-8 font-satoshi">
               <Link
                 to="/register"
-                className="h-[46px] w-[172px] bg-[#CBFC01] hover:bg-[#b8e400] text-[#1D1E20] font-semibold text-[16px] rounded-full transition-all active:scale-95 shadow-md flex items-center justify-center cursor-pointer"
+                className="h-[46px] w-[172px] bg-[#CBFC01] hover:bg-[#b8e400] text-[#242528] font-medium text-[18px] leading-[1.2] rounded-full transition-all active:scale-95 shadow-md flex items-center justify-center cursor-pointer"
               >
                 Join as Creator
               </Link>
@@ -1048,15 +1049,15 @@ export default function Home() {
         }}
       >
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-5 space-y-14 sm:space-y-16 relative z-10">
-          {/* Header Row: Left Heading (46px) + Right Description (18px) */}
+          {/* Header Row: Left Heading (44px) + Right Description (18px) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             <div className="lg:col-span-6">
-              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-bold text-[#1D1E20] tracking-[-0.02em] leading-[1.18]">
+              <h2 className="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#242528] tracking-[-0.01em] leading-[1.2]">
                 Discover What Our <br className="hidden sm:inline" />Community Is Saying
               </h2>
             </div>
             <div className="lg:col-span-6">
-              <p className="text-[#4B4C53] text-base sm:text-[18px] leading-[1.65] font-normal">
+              <p className="font-satoshi text-[#4B4C53] text-base sm:text-[18px] leading-[1.6] font-normal">
                 At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.
               </p>
             </div>
@@ -1077,17 +1078,17 @@ export default function Home() {
                 />
 
                 {/* Name */}
-                <h4 className="text-[22px] font-bold text-[#1D1E20] leading-tight">
+                <h4 className="font-poppins text-[20px] font-semibold text-[#242528] leading-[1.2]">
                   {t.name}
                 </h4>
 
                 {/* Role in Primary Blue */}
-                <span className="text-[16px] font-medium text-[#003BE2] mt-1 mb-5 block">
+                <span className="font-satoshi text-[18px] font-normal text-[#003BE2] mt-1 mb-5 block">
                   {t.role}
                 </span>
 
                 {/* Quote: Clean upright font, no italic */}
-                <p className="text-[15px] sm:text-[16px] text-[#4B4C53] leading-[1.65] font-normal">
+                <p className="font-satoshi text-[18px] text-[#4B4C53] leading-[1.6] font-normal">
                   {t.quote}
                 </p>
               </div>

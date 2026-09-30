@@ -1,3 +1,4 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap");
 @import "@fontsource/poppins/400.css";
 @import "@fontsource/poppins/500.css";
 @import "@fontsource/poppins/600.css";
@@ -7,7 +8,8 @@
 
 @theme {
   --font-poppins: 'Poppins', sans-serif;
-  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-satoshi: 'Satoshi', sans-serif;
+  --font-sans: 'Satoshi', 'Poppins', system-ui, -apple-system, sans-serif;
 
   /* Primary & Accent Colors (Figma Exact) */
   --color-primary-blue: #003BE2;
@@ -93,7 +95,7 @@
 
 /* Global Base Styles */
 body {
-  font-family: var(--font-poppins);
+  font-family: var(--font-satoshi);
   color: var(--color-text-primary);
   background-color: var(--color-surface-white);
   margin: 0;
@@ -101,6 +103,23 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+/* Headings default to Poppins as in Figma design system */
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-poppins);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-satoshi {
+  font-family: var(--font-satoshi);
 }
 
 /* Reusable Background Grid Pattern (120px x 120px cell, 12% white lines on #003BE2) */
@@ -125,14 +144,13 @@ body {
   pointer-events: none;
 }
 
-/* 404 Hero Gradient Text: #D4FB20 to transparent white */
+/* 404 Hero Gradient Text: Electric lime #CBFC01 fading to transparent matching Figma */
 .text-404-gradient {
   font-family: var(--font-poppins);
-  font-size: 480px;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  background: linear-gradient(180deg, #D4FB20 0%, rgba(255, 255, 255, 0) 100%);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  background: linear-gradient(180deg, #CBFC01 0%, rgba(203, 252, 1, 0.05) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   user-select: none;

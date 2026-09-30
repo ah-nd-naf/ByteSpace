@@ -137,7 +137,7 @@ export default function DevTokens() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] text-[#242528] pb-24 font-['Poppins']">
+    <div className="min-h-screen bg-[#FAFAFA] text-[#242528] pb-24 font-satoshi">
       {/* Dev Header */}
       <header className="bg-[#003BE2] text-white py-6 border-b border-[#E5E6E8]">
         <Container className="flex items-center justify-between">

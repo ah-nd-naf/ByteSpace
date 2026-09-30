@@ -40,7 +40,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-white border-t border-[#E5E6E8] text-[#242528] pt-16 pb-12">
+    <footer className="w-full bg-white border-t border-[#E5E6E8] text-[#242528] pt-16 pb-12 font-satoshi">
       {/* 
         Outer container measured from PDF:
         Width: 1200px on 1440px desktop (120px left & right padding)
@@ -68,13 +68,13 @@ export default function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-1 h-[52px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-base focus:outline-none focus:ring-2 focus:ring-[#003BE2] focus:border-transparent transition-all"
+                className="flex-1 h-[52px] px-4 rounded-[12px] border border-[#CED0D3] bg-white text-[#242528] placeholder-[#82868E] text-base focus:outline-none focus:ring-2 focus:ring-[#003BE2] focus:border-transparent transition-all font-satoshi"
               />
               <button
                 type="submit"
-                className="h-[52px] px-6 bg-[#CBFC01] hover:bg-[#b8e400] active:scale-95 text-[#242528] text-base font-semibold rounded-[12px] transition-all cursor-pointer whitespace-nowrap shadow-sm"
+                className="h-[52px] px-6 bg-[#CBFC01] hover:bg-[#b8e400] active:scale-95 text-[#242528] text-base font-semibold rounded-[12px] transition-all cursor-pointer whitespace-nowrap shadow-sm font-satoshi"
               >
-                Subscribe
+                Search
               </button>
             </form>
 
@@ -95,21 +95,19 @@ export default function Footer() {
 
           {/* 
             Right Section (7 cols): 3 Link columns
-            Measured from PDF:
-            Column 1 (x=740): Browse
-            Column 2 (x=947): Categories
-            Column 3 (x=1154): Platform
+            Exact Figma visual layout:
+            No "Browse" or "Platform" headers in Figma visual design!
+            The 3 link columns start directly and align with "Stay Up to date with our latest features..."
           */}
-          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
-            {/* Column 1: Browse */}
+          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8 lg:pt-[54px]">
+            {/* Column 1: Featured Courses, Categories, etc. */}
             <div>
-              <h4 className="text-base font-semibold text-[#242528] mb-4">Browse</h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {browseLinks.map((item) => (
                   <li key={item.label}>
                     <Link
                       to={item.to}
-                      className="text-sm text-[#4B4C53] hover:text-[#003BE2] transition-colors"
+                      className="text-sm text-[#4B4C53] hover:text-[#003BE2] transition-colors font-satoshi font-normal"
                     >
                       {item.label}
                     </Link>
@@ -118,17 +116,14 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Column 2: Categories (Aligned with Browse) */}
+            {/* Column 2: Development, Marketing, etc. */}
             <div>
-              <h4 className="text-base font-semibold text-transparent select-none mb-4 hidden sm:block">
-                Categories
-              </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {categoryLinks.map((item) => (
                   <li key={item.label}>
                     <Link
                       to={item.to}
-                      className="text-sm text-[#4B4C53] hover:text-[#003BE2] transition-colors"
+                      className="text-sm text-[#4B4C53] hover:text-[#003BE2] transition-colors font-satoshi font-normal"
                     >
                       {item.label}
                     </Link>
@@ -137,15 +132,14 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Column 3: Platform */}
+            {/* Column 3: Become a Creator, Affiliate Program, etc. */}
             <div>
-              <h4 className="text-base font-semibold text-[#242528] mb-4">Platform</h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {platformLinks.map((item) => (
                   <li key={item.label}>
                     <Link
                       to={item.to}
-                      className="text-sm text-[#4B4C53] hover:text-[#003BE2] transition-colors"
+                      className="text-sm text-[#4B4C53] hover:text-[#003BE2] transition-colors font-satoshi font-normal"
                     >
                       {item.label}
                     </Link>

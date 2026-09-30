@@ -42,7 +42,7 @@ export default function Navbar() {
             <NavLink
               key={link.label}
               to={link.to}
-              className="text-white hover:opacity-80 text-base font-normal tracking-tight transition-opacity duration-150"
+              className="text-white hover:opacity-80 text-base font-poppins font-normal tracking-tight transition-opacity duration-150"
             >
               {link.label}
             </NavLink>
@@ -59,14 +59,14 @@ export default function Navbar() {
         <div className="flex items-center gap-6 sm:gap-7">
           <Link
             to="/login"
-            className="text-white hover:opacity-80 text-base font-normal transition-opacity"
+            className="text-white hover:opacity-80 text-base font-poppins font-normal transition-opacity"
           >
             Sign In
           </Link>
 
           <Link
             to="/register"
-            className="text-white hover:opacity-80 text-base font-normal transition-opacity"
+            className="text-white hover:opacity-80 text-base font-poppins font-normal transition-opacity"
           >
             Join Us
           </Link>
@@ -119,7 +119,7 @@ export default function Navbar() {
               key={link.label}
               to={link.to}
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-white hover:opacity-80 text-base py-1.5 transition-opacity"
+              className="block text-white hover:opacity-80 text-base py-1.5 transition-opacity font-poppins font-normal"
             >
               {link.label}
             </NavLink>
@@ -128,14 +128,14 @@ export default function Navbar() {
             <Link
               to="/login"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-white hover:opacity-80 text-sm"
+              className="text-white hover:opacity-80 text-sm font-poppins"
             >
               Sign In
             </Link>
             <Link
               to="/register"
               onClick={() => setMobileMenuOpen(false)}
-              className="bg-[#CBFC01] text-[#242528] px-4 py-1.5 rounded-[12px] text-sm font-semibold"
+              className="bg-[#CBFC01] text-[#242528] px-4 py-1.5 rounded-[12px] text-sm font-poppins font-semibold"
             >
               Join Us
             </Link>
